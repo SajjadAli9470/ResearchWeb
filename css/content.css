@@ -1,0 +1,471 @@
+.row1 {
+  justify-content: center;
+  display: flex;
+  background-color: #ffffff !important;
+  /* margin-left: -4rem; */
+
+}
+
+.content_list {
+  padding: 0;
+  width: 65%;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-right: 23%;
+
+
+}
+
+.column2 {
+  margin-top: 5rem;
+  height: 100%;
+  position: fixed !important;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 23%;
+  display: block;
+  justify-content: center;
+  background: white;
+}
+
+footer {
+  margin-right: 23%;
+}
+
+.fixed-element.fixed {
+  position: fixed;
+  top: 0;
+}
+
+hr.solid {
+  border-top: 1px solid #bbb;
+}
+
+.tuts_section {
+  margin-top: 4.5rem;
+  align-content: flex-start;
+  /* padding: 2%; */
+}
+
+.content_item {
+  display: flex;
+  font-size: 100%;
+  text-align: left;
+  padding-bottom: 1%;
+  background-color: #8261ee0c;
+
+}
+
+.post {
+  margin: 0.5rem;
+  overflow: hidden;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  /* background-color: rgb(0, 0, 0); */
+  border-radius: 0.5rem;
+
+}
+
+.post:hover {
+  cursor: pointer;
+  background-color: rgba(245, 243, 243, 0.542);
+  border-radius: 0.5rem;
+}
+
+.column2 .search {
+  justify-content: center;
+  text-align: center;
+  margin: 1rem 0rem 0rem 1rem;
+  /* width: 0rem; */
+}
+
+.input_search {
+  position: relative;
+  padding: 0.5rem 0.7rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  border: 1px solid rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+
+.input_search:focus {
+  background-color: rgb(255, 255, 255);
+}
+
+.search_result {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  /* padding: 0.2rem; */
+  background-color: #f7f5f5;
+
+}
+
+.search_result li {
+  /* margin: 0% !important; */
+  list-style: none;
+  cursor: pointer;
+  background-color: #f7f5f5;
+  font-size: 1.5rem;
+  padding: 0.3rem;
+  margin: 0.3rem 0;
+
+}
+
+.search_result li:hover {
+  background-color: #8261ee;
+  ;
+  color: white;
+}
+
+.search_result {
+
+  position: absolute;
+  width: 28rem;
+  max-height: 30rem;
+  margin-left: 15%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  resize: none;
+}
+
+.button:hover {
+  cursor: default;
+  background-color: rgb(255, 255, 255);
+}
+
+.content_list .content_item:nth-child(1) {
+  display: flex;
+}
+
+.content_list .content_item:nth-child(2) {
+  display: flex;
+}
+
+.content_list .content_item:nth-child(3) {
+  display: flex;
+}
+
+.content_list .content_item:nth-child(4) {
+  display: flex;
+}
+
+.content_list .content_item:nth-child(5) {
+  display: flex;
+}
+
+.content_list .content_item:nth-child(6) {
+  display: flex;
+}
+
+.content_list .content_item:nth-child(7) {
+  display: flex;
+}
+
+.content_list .content_item:nth-child(8) {
+  display: flex;
+}
+
+.content_list .content_item:nth-child(9) {
+  display: flex;
+}
+
+.content_list .content_item:nth-child(10) {
+  display: flex;
+}
+
+.content_list .button {
+  padding: 5%;
+}
+
+.content_list .button .btn {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+}
+
+.content {
+  padding: 1%;
+
+}
+
+.content li {
+  margin-left: 4%;
+
+}
+
+.content_img {
+  justify-content: center;
+  max-width: 45rem;
+  margin: 0 7rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(7, 36, 27);
+}
+
+a:hover {
+  color: rgb(114, 115, 131);
+}
+
+.thumbnail {
+  margin: auto;
+  justify-content: center;
+}
+
+.thumbnail_pic {
+  display: block;
+  width: 11rem;
+  height: 11rem;
+}
+
+.content .more_text {
+  margin: auto;
+  text-align: left;
+}
+
+.more_text {
+  display: none;
+  text-align: left;
+}
+
+blockquote {
+  padding: 5%;
+  text-align: center;
+}
+
+.tutorials_topic {
+  text-align: center;
+  color: rgb(56, 54, 54);
+  font-size: 2rem;
+  text-decoration: overline underline;
+}
+
+.mainhead {
+  width: 100%;
+  justify-content: center;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.read_more {
+  display: flow-root;
+  color: #8261ee !important;
+  border-radius: 0.5rem;
+  padding: 0 0.2rem !important;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.read_more:hover {
+  color: white !important;
+  background-color: #8261ee93 !important;
+  border: none !important;
+}
+
+.content_item textarea {
+  border-radius: 0.5rem;
+  resize: none;
+  outline: white;
+  max-width: 95%;
+  min-width: 95%;
+  background-color: rgb(243, 243, 243);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 3%;
+  font-size: 1.5rem;
+}
+
+code {
+  border-radius: 2%;
+  background-color: white;
+}
+
+.post_catagories {
+  padding-left: 3%;
+
+  font-size: 1.5rem;
+}
+
+.post_catagories li {
+  font-variant: unset;
+  list-style: none;
+  width: fit-content;
+  cursor: pointer;
+  padding-left: 2%;
+  padding-right: 2%;
+
+}
+
+.post_catagories li:hover {
+  color: white;
+  transform: scale(1.05);
+  background-color: #8261ee;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+#post_tags {
+  padding-left: 5%;
+  font-size: 1.5rem;
+}
+
+#post_tags li {
+  font-variant: unset;
+  list-style: none;
+  width: fit-content;
+  cursor: pointer;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.AllPosts {
+  padding: 2rem;
+}
+
+.AllPosts h2 {
+  background-color: rgb(238, 238, 238);
+  padding: 1%;
+  padding-left: 2%;
+  border-left: 3px solid #8261ee;
+}
+
+#post_tags li:hover {
+  color: white;
+  background-color: #8261ee;
+  border-radius: 0.3rem;
+}
+
+.more_text li {
+  padding: 0%;
+  margin-left: 5rem;
+  list-style: decimal;
+}
+
+form .btn {
+  color: rgb(7, 0, 0);
+  border: none;
+}
+
+.showcmt {
+  color: #111 !important;
+  border: 1px solid rgb(189, 187, 187) !important;
+}
+
+.showcmt:hover {
+  color: rgb(253, 253, 253) !important;
+}
+
+#allcomments {
+  text-align: left;
+  padding: 2%;
+  font-size: 1.5rem;
+  margin: 1%;
+
+}
+
+.allcomments {
+  padding: 2rem;
+}
+
+ul#pastcomments {
+  list-style-type: none;
+}
+
+ul#pastcomments li:before {
+  content: url("./defaultAvater.png");
+}
+
+ul#pastcomments li {
+  margin: 0 0 1em 0;
+  padding: 10px;
+  font-size: 95%;
+  color: rgb(12, 12, 12);
+  border-radius: 0.3rem;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+
+ul#pastcomments li span {
+  margin-left: 1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: white;
+  background-color: #8261ee;
+  ;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+}
+
+ul#pastcomments li div :before {
+  content: url("img/defaultAvater.png");
+}
+
+ul#pastcomments li div {
+  margin-left: 3.2rem;
+
+  background: rgba(245, 243, 243, 0.76);
+  font-size: 95%;
+  color: #111;
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+  overflow: hidden;
+}
+
+form#newcomment textarea {
+  padding: 0%;
+  height: 72px;
+}
+
+form#newcomment textarea,
+form#newcomment input[type="text"] {
+  margin-top: 0;
+  padding: 0.7rem;
+  background: rgb(253, 252, 252);
+  border-color: #8261ee9c;
+  margin-top: 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 1.3rem;
+}
+
+.showcmt {
+  padding: 0%;
+  width: 30%;
+  background: none;
+  border: 1px solid;
+  border-radius: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.ques {
+  color: rgb(0, 0, 0);
+}
+
+.publisher {
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.publisher::before {
+  content: "Author : ";
+  font-weight: bold;
+}
+
+.publishOn {
+  margin: 0 2rem 0 2rem;
+}
+
+.publishOn::before {
+  content: 'Published : ';
+  font-weight: bold;
+}
+
+@media (max-width:500px) {
+  .publishOn {
+    display: flow-root;
+    margin: 0;
+  }
+}

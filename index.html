@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ResearchWeb-Keep research to Learn more...</title>
+
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+  </script>
+
+  <link rel="stylesheet" href="./css/content.css" />
+  <link rel="stylesheet" href="./css/Portfolio.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/SYSTEMVIRUSOFSREJS.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+  <link rel="stylesheet" href="assets/css/styleAlter.css">
+  <link rel="shortcut icon" type="image/png" href="img/logo_page.png" />
+</head>
+
+<body>
+
+
+  <header class="header">
+
+    <div class="nav">
+
+      <div class="web__title" onclick="gohome()">
+        <h2 class="">
+          RESEARCH <span class="highlight">WEB</span>
+        </h2>
+      </div>
+
+      <ul id="MenueDisplay" class="nav__links">
+
+        <li id="homepage" class="nav__item active">
+          <a class="nav__link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav__item dropdown">
+
+          <a id="allpage" class="nav__link" onclick="openCatMenu()">Posts<i class="fa fa-angle-down downangle"></i></a>
+
+          <ul class="content_pages">
+            <li onclick="post1()">
+              Data Structure
+            </li>
+            <li onclick="post2()">
+              Java
+            </li>
+            <li onclick="post3()">
+              MS SQL
+            </li>
+            <li onclick="post4()">
+              Research Based
+            </li>
+            <li onclick="post5()">
+              C++
+            </li>
+          </ul>
+
+        </li>
+        <li id="portfolio" class="nav__item ">
+          <a class="nav__link" target=”_blank” href="Portfolio.html">Portfolio</a>
+        </li>
+        <li id="package" class="nav__item ">
+          <a class="nav__link" href="Packages.html">Packages</a>
+        </li>
+        <li class="nav__item ">
+          <a class="nav__link btn--show-modal openaccount" href="#contact">Contact</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </header>
+
+  <div id="preloader">
+    <div class="jumper">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+
+  <!-- ***** Welcome Area Start ***** -->
+  <div class="welcome-area" id="welcome">
+
+    <!-- ***** Header Text Start ***** -->
+    <div class="header-text">
+      <div class="container">
+        <div class="row">
+          <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+            <h1><strong>CREATIVITY</strong> IS THE HEART OF <strong>RESEARCH</strong></h1>
+            <p>Because research allows you to pursue your interests, to learn something new,
+              to hone your problem-solving skills and to challenge yourself in new ways</p>
+            <a href="#features" class="main-button-slider">Discover More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***** Header Text End ***** -->
+  </div>
+  <!-- ***** Welcome Area End ***** -->
+
+  <!-- ***** Features Small Start ***** -->
+  <section class="section home-feature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <!-- ***** Features Small Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12"
+              data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+              <div class="features-small-item">
+                <div class="icon">
+                  <i>
+                    <img class="curveCut" src="./img/newbulb2.png" alt=""></i>
+                </div>
+                <h5 class="features-title">Creativity in work</h5>
+                <p>You will see our creative ideas for your projects</p>
+              </div>
+            </div>
+            <!-- ***** Features Small Item End ***** -->
+
+            <!-- ***** Features Small Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12"
+              data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+              <div class="features-small-item">
+                <div class="icon">
+                  <i><img class="curveCut" src="./img/newQuality.png" alt=""></i>
+                </div>
+                <h5 class="features-title">Modern Strategy</h5>
+                <p>Customize anything in projects to fit your website/application needs</p>
+              </div>
+            </div>
+            <!-- ***** Features Small Item End ***** -->
+
+            <!-- ***** Features Small Item Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12"
+              data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+              <div class="features-small-item">
+                <div class="icon">
+                  <i><img class="curveCut" src="./img/newDevlopment.png" alt=""></i>
+                </div>
+                <h5 class="features-title">Desire Development</h5>
+                <p>You just need to tell what you want? <i>Inshallah</i> you will get desired Production</p>
+              </div>
+            </div>
+            <!-- ***** Features Small Item End ***** -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Features Small End ***** -->
+
+  <!-- ***** Features Big Item Start ***** -->
+  <section class="section padding-top-70 padding-bottom-0" id="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-12 col-sm-12 align-self-center"
+          data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+          <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
+          <div class="left-heading">
+            <h2 class="section-title">Why this Platform?</h2>
+          </div>
+          <div class="left-text">
+            <p>ResearchWeb is a very good platform for those who are intrested in Programming and also for any topic
+              which belong tecnology.Our target is to keep research and increase Knowledge
+              .We can also post Portfolio Programming according to your desire.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="hr"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Features Big Item End ***** -->
+
+  <!-- ***** Features Big Item Start ***** -->
+  <section class="section padding-bottom-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+          <div class="left-heading">
+            <h2 class="section-title">WHAT IS RESEARCH?</h2>
+          </div>
+          <div class="left-text">
+            <p>Research is search for facts and knowledge.
+              it's mean is to carefully analyze surrounding elements.
+              Research is organised because
+              there is a planned structure or method used to reach the conclusion.
+              Research is only successful if we find answers, whether we like these answers or not.
+              Research is only the way of creativity and improvements.</p>
+          </div>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix-big"
+          data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+          <img src="assets/images/right-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Features Big Item End ***** -->
+
+  <!-- ***** Home Parallax Start ***** -->
+  <section class="mini" id="work-process">
+    <div class="mini-content">
+      <div class="container">
+        <div class="row">
+          <div class="offset-lg-3 col-lg-6">
+            <div class="info">
+              <h1>Project Based Learning</h1>
+              <p>Project-based learning is a dynamic classroom approach in which students actively
+                explore real-world problems and challenges and acquire a deeper knowledge.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ***** Mini Box Start ***** -->
+        <div class="row">
+          <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+            <a href="#" class="mini-box">
+              <i><img class="curveCut" src="./img/portfolio/cplus.png" alt=""></i>
+              <strong>C++</strong>
+
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+            <a href="#" class="mini-box">
+              <i><img class="curveCut" src="./img/portfolio/reactjs.png" alt=""></i>
+              <strong>React JS</strong>
+
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+            <a href="#" class="mini-box">
+              <i><img class="curveCut" src="./img/portfolio/java.png" alt=""></i>
+              <strong>Java</strong>
+
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+            <a href="#" class="mini-box">
+              <i><img class="curveCut" src="./img/portfolio/wordpress.png" alt=""></i>
+              <strong>Wordpress</strong>
+
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+            <a href="#" class="mini-box">
+              <i><img class="curveCut" src="./img/portfolio/Flutter.png" alt=""></i>
+              <strong>Flutter</strong>
+
+            </a>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-6 col-6">
+            <a href="#" class="mini-box">
+              <i><img class="curveCut" src="./img/portfolio/javascript.png" alt=""></i>
+              <strong>Javascript</strong>
+
+            </a>
+          </div>
+        </div>
+        <!-- ***** Mini Box End ***** -->
+      </div>
+    </div>
+  </section>
+  <!-- ***** Home Parallax End ***** -->
+
+  <!-- ***** Testimonials Start ***** -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <!-- ***** Section Title Start ***** -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="center-heading">
+            <h2 class="section-title">Team Members</h2>
+          </div>
+        </div>
+        <!-- <div class="offset-lg-3 col-lg-6">
+          <div class="center-text">
+            <p>Donec tempus, sem non rutrum imperdiet, lectus orci fringilla nulla, at accumsan elit eros a turpis. Ut
+              sagittis lectus libero.</p>
+          </div>
+        </div> -->
+      </div>
+      <!-- ***** Section Title End ***** -->
+
+      <div class="row">
+        <!-- ***** Testimonials Item Start ***** -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="team-item">
+            <div class="team-content">
+              <!-- <i><img src="assets/images/testimonial-icon.png" alt=""></i> -->
+              <p></p>
+              <div class="user-image">
+                <img class="curveCut" src="./img/sajjad.JPG" alt="">
+              </div>
+              <div class="team-info">
+                <h3 class="user-name">Sajjad Ali</h3>
+                <span>Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ***** Testimonials Item End ***** -->
+
+        <!-- ***** Testimonials Item Start ***** -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="team-item">
+            <div class="team-content">
+              <!-- <i><img src="assets/images/testimonial-icon.png" alt=""></i> -->
+              <p></p>
+              <div class="user-image">
+                <img class="curveCut" src="./img/ejaz.jpg" alt="">
+              </div>
+              <div class="team-info">
+                <h3 class="user-name">Ejaz Ali</h3>
+                <span>Graphic Designer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ***** Testimonials Item End ***** -->
+
+
+
+        <!-- ***** Testimonials Item Start ***** -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="team-item">
+            <div class="team-content">
+              <!-- <i><img src="assets/images/testimonial-icon.png" alt=""></i> -->
+              <p></p>
+              <div class="user-image">
+                <img class="curveCut" src="./img/shahbaz.jpeg" alt="">
+              </div>
+              <div class="team-info">
+                <h3 class="user-name">Shahbaz Abid</h3>
+                <span>Content Manager</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ***** Testimonials Item End ***** -->
+      </div>
+    </div>
+  </section>
+  <!-- ***** Testimonials End ***** -->
+  <div class="hr"></div>
+
+
+  <!-- ***** Contact Us Start ***** -->
+  <section class="section colored" id="contact-us">
+    <div class="container">
+      <!-- ***** Section Title Start ***** -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="center-heading">
+            <h2 class="section-title">Talk To Us</h2>
+          </div>
+        </div>
+        <div class="offset-lg-3 col-lg-6">
+          <div class="center-text">
+            <p>For any queries or projects you can contact us</p>
+          </div>
+        </div>
+      </div>
+      <!-- ***** Section Title End ***** -->
+
+      <div class="row">
+        <!-- ***** Contact Text Start ***** -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <h5 class="margin-bottom-30">Keep in touch</h5>
+          <div class="contact-text">
+            <p>CPO 10/8 Majeed SRE Dalmian, near National Stadium road ,Karachi East
+              <br>Pakistan
+            </p>
+            <p>Please enter your correct information. Because we will contact you on the base of given information. <br>
+              Thank you
+            </p>
+          </div>
+        </div>
+        <!-- ***** Contact Text End ***** -->
+
+        <!-- ***** Contact Form Start ***** -->
+        <div class="col-lg-8 col-md-6 col-sm-12">
+          <div class="contact-form">
+            <form id="contact" action="" method="get">
+              <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="fname" placeholder="First Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="lname" placeholder="Last Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="email" type="email" class="form-control" id="email" placeholder="E-Mail Address"
+                      required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message"
+                      required=""></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- ***** Contact Form End ***** -->
+      </div>
+    </div>
+  </section>
+  <!-- ***** Contact Us End ***** -->
+
+  <!-- ***** Footer Start ***** -->
+
+
+  <!-- jQuery -->
+  <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- Plugins -->
+  <script src="assets/js/scrollreveal.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/imgfix.min.js"></script>
+
+  <!-- Global Init -->
+  <script src="assets/js/custom.js"></script>
+
+
+
+
+
+  <!-- <div class="container_social">
+    <div class="bar">
+      L<br>I <br>N<br>K
+    </div>
+  </div>
+  <div class="social_icons">
+
+    <div class="s_icon">
+      <a class="social-whatsapp" href="https://wa.me/+923408586646?text=" target="_blank"><i
+          class="fa fa-whatsapp"></i></a>
+    </div>
+    <div class="s_icon">
+      <a class="social-tw" href="mailto:sajjadali9470@gmail.com"><i class="fa fa-envelope"></i></a>
+    </div>
+
+    <div class="s_icon">
+      <a class="social-fb" href="https://www.facebook.com/sajjadali9470"><i class="fab fa-facebook-f"></i></a>
+    </div>
+
+    <div class="s_icon">
+      <a class="social-li" href="https://www.linkedin.com/in/sajjad-ali-6067751a6/"><i
+          class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <div class="s_icon">
+      <a class="social-in" href="https://www.instagram.com/sajjadali070/"><i class="fab fa-instagram"></i></a>
+
+    </div>
+
+  </div> -->
+
+  <div class="container_menu" onclick="MenuIcon(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="parts part1">
+      <a class="social-tw" href="mailto:sajjadali9470@gmail.com"><i class="fa fa-envelope"></i></a>
+      <a class="social-fb" href="https://www.facebook.com/sajjadali9470" target="_blank"><i
+          class="fab fa-facebook-f"></i></a>
+      <a class="social-li" href="https://www.linkedin.com/in/sajjad-ali-6067751a6/" target="_blank"><i
+          class="fab fa-linkedin-in"></i></a>
+      <a class="social-in" href="https://www.instagram.com/sajjadali070/"><i class="fab fa-instagram"></i></a>
+      <a class="social-whatsapp" href="https://wa.me/+923408586646?text=" target="_blank"><i
+          class="fa fa-whatsapp"></i></a>
+    </div>
+    <div class="parts part2">
+      <h3 style="color: white;">&copy; Copyright by
+        ResearchWeb</h3>
+    </div>
+  </footer>
+  <button onclick="scrollTopAnimated()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+  <script src="./js/script.js"></script>
+  <!-- <script src="slider1.js"></script> -->
+  <script src="./js/DAJJAS5004.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAI6bkhv7Z1d6RJEAXuSIPYNkTNUQTi60c",
+      authDomain: "researchweb-sajjad070.firebaseapp.com",
+      databaseURL: "https://researchweb-sajjad070-default-rtdb.firebaseio.com",
+      projectId: "researchweb-sajjad070",
+      storageBucket: "researchweb-sajjad070.appspot.com",
+      messagingSenderId: "933654276941",
+      appId: "1:933654276941:web:625b6743813e9b679ba504",
+      measurementId: "G-RWDKDRRZMK"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const rootRef = firebase.database().ref();
+
+    const commentsRef = rootRef.child('messages');
+    // const admin=commentsRef.child('recommete')
+
+    document.getElementById("btnSubmitmessage").addEventListener("click", function () {
+      var checkEmpty1 = 0;
+      var checkEmpty2 = 0;
+      var checkEmpty3 = 0;
+      var checkEmpty4 = 0;
+      var fnameNew = [...document.getElementById('fname').value];
+      var lnameNew = [...document.getElementById('lname').value];
+      var emailNew = [...document.getElementById('email').value];
+      var messageNew = [...document.getElementById('message').value];
+
+      for (let i = 0; i < fnameNew.length; i++) {
+        if (fnameNew[i] == " ") {
+          checkEmpty1++;
+
+        }
+      }
+      for (let i = 0; i < lnameNew.length; i++) {
+        if (lnameNew[i] == " ") {
+          checkEmpty2++;
+
+        }
+      }
+      for (let i = 0; i < emailNew.length; i++) {
+        if (emailNew[i] == " ") {
+          checkEmpty3++;
+
+        }
+      }
+      for (let i = 0; i < messageNew.length; i++) {
+        if (messageNew[i] == " ") {
+          checkEmpty4++;
+
+        }
+      }
+      if (checkEmpty1 === fnameNew.length || checkEmpty2 === lnameNew.length || checkEmpty3 === emailNew.length || checkEmpty4 === messageNew.length) {
+
+      } else {
+
+        var messagenew = document.getElementById('message').value.replace(/\n/g, "<br>");
+
+        var newPostRef = commentsRef.push();
+
+        newPostRef.set({
+          firstname: document.getElementById('fname').value.trim(),
+          lastname: document.getElementById('lname').value.trim(),
+          email: document.getElementById('email').value.trim(),
+          message: messagenew.trim(),
+          when: firebase.database.ServerValue.TIMESTAMP
+        });
+      }
+
+
+    });
+
+  </script>
+
+</body>
+
+</html>

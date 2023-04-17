@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio-RW Develpor</title>
+  <link rel="stylesheet" href="./css/content.css" />
+  <link rel="stylesheet" href="./css/Portfolio.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/SYSTEMVIRUSOFSREJS.css" />
+  <link rel="stylesheet" href="./css/package.css">
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+  <link rel="stylesheet" href="assets/css/styleAlter.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/png" href="img/logo_page.png" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+  </script>
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="nav">
+
+      <div class="web__title">
+
+
+
+
+        <h2 class="" onclick="gohome()">
+          RESEARCH <span class="highlight">WEB</span>
+        </h2>
+      </div>
+
+
+
+      <ul id="MenueDisplay" class="nav__links">
+
+        <li class="nav__item ">
+          <a class="nav__link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav__item dropdown">
+
+          <p id="allpage" class="nav__link" onclick="openCatMenu()">Posts<i class="fa fa-angle-down downangle"></i></i>
+          </p>
+
+          <ul class="content_pages">
+            <li onclick="post1()">
+              Data Structure
+            </li>
+            <li onclick="post2()">
+              Java
+            </li>
+            <li onclick="post3()">
+              MS SQL
+            </li>
+            <li onclick="post4()">
+              Research Based
+            </li>
+            <li onclick="post5()">
+              C++
+            </li>
+          </ul>
+
+        </li>
+        <li id="portfolio" class="nav__item active">
+          <a class="nav__link" href="Portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav__item ">
+          <a class="nav__link" href="Packages.html">Packages</a>
+        </li>
+        <li class="nav__item ">
+          <a class="nav__link btn--show-modal openaccount" href="#contact">Contact</a>
+        </li>
+        <!-- <li class="nav__item search ">
+            <input class="input_search" type="text" placeholder="Only in Posts">
+            <br>
+            <ul id="s_result" class="search_result hidden">
+            </ul>
+          </li> -->
+
+      </ul>
+
+    </div>
+  </header>
+  <div class="main_about">
+
+    <div class="left_about">
+      <img src="./img/portfolio/myImage.png" alt="">
+    </div>
+    <div class="right_about">
+      <h1>
+        <b>Sajjad Ali</b>
+      </h1>
+      <h2>
+        WEB Designer &amp; Developer
+
+      </h2>
+      <h2 class="myQuote">
+        To grow ,learn and make myself a valuable asset for the organization by acquiring practices
+        of cutting edge technologies and mark new and more effective ways to work.
+      </h2>
+
+    </div>
+    <!-- <div class="mypic"> -->
+    <!-- <img src="img/new_pic.png" alt=""> -->
+    <!-- <h1>
+      Sajjad Ali
+  </h1>
+  <h2>
+      <i>WEB Designer &amp; Developer</i>
+  </h2> -->
+    <!-- </div> -->
+  </div>
+  <div id="Biography" class="biography">
+    <h1>Who's this guy?</h1>
+    <p>Hi, I&rsquo;m Sajjad Ali, currently working as a Web Developer.Now I am a student of BS Computer science at <a
+        href="https://www.bahria.edu.pk">Bahria university Karachi</a> campus.I am very passionate and dedicated to my
+      work. I have acquired the skills necessary to build great and premimum web sites. Passion to design responsive and
+      creative layout static sites, landing pages & complex dynamic site's.<br>
+      Previously, I worked for Desktop Applications and also on Web Application. I am also an open-source enthusiast and
+      have created projects that were listed in GitHub.My interests lie in solving problems related to large-scale or
+      small software systems.
+  </div>
+
+  <div class="bioInt">
+    <div class="interests">
+      <h1>Recently Experienced tecnologies</h1>
+      <ul class="interest_lists">
+        <li>
+          Web App Development
+        </li>
+        <li>
+          Software Development
+        </li>
+        <li>
+          Solving problems (Algorithms)
+        </li>
+        <li>
+          Machine Learning
+        </li>
+      </ul>
+
+    </div>
+    <div class="int_image">
+      <img src="img/portfolio/hero-img.png" alt="">
+    </div>
+  </div>
+
+  <div id="Skills" class="my_skills">
+    <h1>
+      Learned Technologies
+    </h1>
+    <div class="all_skills">
+      <div class="skill_1">
+        <div class="java">
+          <img src="img/portfolio/java.png" alt="">
+          <h2>
+            <b>Java</b>
+            <!-- <br>Desktop Application -->
+
+          </h2>
+        </div>
+        <div class="cplus">
+          <img src="img/portfolio/cplus.png" alt="">
+          <h2>
+            <b>C/C++</b>
+            <!-- <br>Software Development -->
+          </h2>
+        </div>
+        <div class="database">
+          <img src="img/portfolio/database.png" alt="">
+          <h2>
+            <b>SQL</b>
+            <!-- <br>Web/Software Database -->
+          </h2>
+        </div>
+      </div>
+      <div class="skill_1">
+
+        <div class="javascript">
+          <img src="img/portfolio/javascript.png" alt="">
+          <h2>
+            <b>Javascript</b>
+            <!-- <br>Web Development -->
+          </h2>
+        </div>
+        <div class="reactjs">
+          <img src="img/portfolio/reactjs.png" alt="">
+          <h2>
+            <b>React Js</b>
+            <!-- <br>Frontend framework -->
+          </h2>
+        </div>
+        <div class="wordpress">
+          <img src="img/portfolio/wordpress.png" alt="">
+          <h2>
+            <b>WordPress</b>
+            <!-- <br>Website's Builder -->
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Exp" class="exp">
+
+    <div class="my_exp">
+
+      <div class="stra">
+        <img src="img/portfolio/about-img.png" alt="">
+      </div>
+      <div class="exp_part">
+        <h1>Experience</h1>
+        <ul>
+          <li>
+
+            +1 year Experience in Web development.
+
+          </li>
+          <li>
+
+            +6 month experience in Software Development.
+
+          </li>
+          <li>
+
+            Team Leader of ResearchWeb development.
+
+          </li>
+          <li>
+
+            Experience in firebase.
+
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+  <div id="Projects" class="my_projects">
+    <h1>Projects</h1>
+    <div class="all_project_option">
+      <div class="a_pr allp" onclick="allpro('',true,0)">
+        All
+      </div>
+      <div class="a_pr javap" onclick="allpro('java',false,1)">
+        Java
+      </div>
+      <div class="a_pr cplusp" onclick="allpro('cplus',false,2)">
+        C++
+      </div>
+      <div class="a_pr javascriptp" onclick="allpro('javascript',false,3)">
+        Javascript
+      </div>
+    </div>
+    <div class="all_projects">
+      <div class="all java">
+        <div class="pro_head">
+          <h2>
+            <b>Guest House Managment</b>
+            <br>
+            Interactive App with Security featured
+          </h2>
+          <span>Java</span><span>Desktop Application</span>
+
+        </div>
+        <div class="pro_img">
+          <img src="img/portfolio/guestManage.png" alt="">
+        </div>
+      </div>
+      <div class="all java">
+        <div class="pro_head">
+          <h2>
+            <b>
+              Resturant Management System
+            </b>
+            <br>
+            App With Advance managment system
+          </h2>
+          <span>Java</span><span>Desktop Application</span>
+        </div>
+        <div class="pro_img">
+          <img src="img/portfolio/resturant.png" alt="">
+        </div>
+      </div>
+      <div class="all cplus">
+        <div class="pro_head">
+          <h2>
+            <b>Pharmacy Managment System</b>
+            <br>
+            Very Detailed Console based App
+          </h2>
+          <span>C++</span><span>Console based</span>
+        </div>
+        <div class="pro_img">
+          <img src="img/portfolio/pharmacyManagment.png" alt="">
+        </div>
+      </div>
+      <div class="all cplus">
+        <div class="pro_head">
+          <h2>
+            <b>Hospital Managment (Reception)</b>
+            <br>
+            Console based Advance system
+          </h2>
+          <span>C++</span><span>Console based</span>
+        </div>
+        <div class="pro_img">
+          <img src="img/portfolio/hospital.png" alt="">
+        </div>
+      </div>
+      <div class="all javascript">
+        <div class="pro_head">
+          <h2>
+            <b>Research Web</b>
+            <br>
+            Website for Blog and Ecomm Purpose
+          </h2>
+          <span>HTML</span><span>CSS</span><span>Javascript</span><span>firebase</span>
+        </div>
+        <div class="pro_img">
+          <img src="img/portfolio/Researchweb.png" alt="">
+        </div>
+      </div>
+      <div class="all javascript">
+        <div class="pro_head">
+          <h2>
+            <b>Guess Number</b>
+            <br>
+            My first JS practice app
+          </h2>
+          <span>HTML</span><span>CSS</span><span>Javascript</span>
+        </div>
+        <div class="pro_img">
+          <img src="img/portfolio/guessANumber.png" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <!-- containers for bar -->
+  <div class="container_menu" onclick="MenuIcon(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <!-- ***** Contact Us Start ***** -->
+  <section class="section colored" id="contact-us">
+    <div class="container">
+      <!-- ***** Section Title Start ***** -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="center-heading">
+            <h2 class="section-title">Talk To Us</h2>
+          </div>
+        </div>
+        <div class="offset-lg-3 col-lg-6">
+          <div class="center-text">
+            <p>For any queries or projects you can contact us</p>
+          </div>
+        </div>
+      </div>
+      <!-- ***** Section Title End ***** -->
+
+      <div class="row">
+        <!-- ***** Contact Text Start ***** -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <h5 class="margin-bottom-30">Keep in touch</h5>
+          <div class="contact-text">
+            <p>CPO 10/8 Majeed SRE Dalmian, near National Stadium road ,Karachi East
+              <br>Pakistan
+            </p>
+            <p>Please enter your correct information. Because we will contact you on the base of given information. <br>
+              Thank you
+            </p>
+          </div>
+        </div>
+        <!-- ***** Contact Text End ***** -->
+
+        <!-- ***** Contact Form Start ***** -->
+        <div class="col-lg-8 col-md-6 col-sm-12">
+          <div class="contact-form">
+            <form id="contact" action="" method="get">
+              <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="fname" placeholder="First Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="lname" placeholder="Last Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="email" type="email" class="form-control" id="email" placeholder="E-Mail Address"
+                      required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message"
+                      required=""></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- ***** Contact Form End ***** -->
+      </div>
+    </div>
+  </section>
+  <!-- ***** Contact Us End ***** -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="parts part1">
+      <a class="social-tw" href="mailto:sajjadali9470@gmail.com"><i class="fa fa-envelope"></i></a>
+      <a class="social-fb" href="https://www.facebook.com/sajjadali9470" target="_blank"><i
+          class="fab fa-facebook-f"></i></a>
+      <a class="social-li" href="https://www.linkedin.com/in/sajjad-ali-6067751a6/" target="_blank"><i
+          class="fab fa-linkedin-in"></i></a>
+      <a class="social-in" href="https://www.instagram.com/sajjadali070/"><i class="fab fa-instagram"></i></a>
+      <a class="social-whatsapp" href="https://wa.me/+923408586646?text=" target="_blank"><i
+          class="fa fa-whatsapp"></i></a>
+    </div>
+    <div class="parts part2">
+      <h3 style="color: white;">&copy; Copyright by
+        ResearchWeb</h3>
+    </div>
+  </footer>
+  <button onclick="scrollTopAnimated()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+  <div class="7TzU0bJEsjOROL5Tk5YzHA" style="display: none;">
+    MEGA
+  </div>
+
+
+
+  <script src="./js/script.js"></script>
+  <script src="./js/content1.js"></script>
+  <script src="./js/portfolio.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAI6bkhv7Z1d6RJEAXuSIPYNkTNUQTi60c",
+      authDomain: "researchweb-sajjad070.firebaseapp.com",
+      databaseURL: "https://researchweb-sajjad070-default-rtdb.firebaseio.com",
+      projectId: "researchweb-sajjad070",
+      storageBucket: "researchweb-sajjad070.appspot.com",
+      messagingSenderId: "933654276941",
+      appId: "1:933654276941:web:625b6743813e9b679ba504",
+      measurementId: "G-RWDKDRRZMK"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const rootRef = firebase.database().ref();
+
+    const commentsRef = rootRef.child('messages');
+    // const admin=commentsRef.child('recommete')
+
+    document.getElementById("btnSubmitmessage").addEventListener("click", function () {
+      var checkEmpty1 = 0;
+      var checkEmpty2 = 0;
+      var checkEmpty3 = 0;
+      var checkEmpty4 = 0;
+      var fnameNew = [...document.getElementById('fname').value];
+      var lnameNew = [...document.getElementById('lname').value];
+      var emailNew = [...document.getElementById('email').value];
+      var messageNew = [...document.getElementById('message').value];
+
+      for (let i = 0; i < fnameNew.length; i++) {
+        if (fnameNew[i] == " ") {
+          checkEmpty1++;
+
+        }
+      }
+      for (let i = 0; i < lnameNew.length; i++) {
+        if (lnameNew[i] == " ") {
+          checkEmpty2++;
+
+        }
+      }
+      for (let i = 0; i < emailNew.length; i++) {
+        if (emailNew[i] == " ") {
+          checkEmpty3++;
+
+        }
+      }
+      for (let i = 0; i < messageNew.length; i++) {
+        if (messageNew[i] == " ") {
+          checkEmpty4++;
+
+        }
+      }
+      if (checkEmpty1 === fnameNew.length || checkEmpty2 === lnameNew.length || checkEmpty3 === emailNew.length || checkEmpty4 === messageNew.length) {
+
+      } else {
+
+        var messagenew = document.getElementById('message').value.replace(/\n/g, "<br>");
+
+        var newPostRef = commentsRef.push();
+
+        newPostRef.set({
+          firstname: document.getElementById('fname').value.trim(),
+          lastname: document.getElementById('lname').value.trim(),
+          email: document.getElementById('email').value.trim(),
+          message: messagenew.trim(),
+          when: firebase.database.ServerValue.TIMESTAMP
+        });
+      }
+
+
+    });
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin RW</title>
+    <link rel="shortcut icon" type="image/png" href="img/admin_logo.png"/>
+    <link rel="stylesheet" href="./css/Admin.css">
+  </head>
+  <body>
+
+    <header>
+        <div class="r_header" title="Go to website">
+            Research Web <span class="admin_head">ADMIN</span>
+        </div>
+        <div class="heading">
+            Research Web CMS
+        </div>
+        
+    </header>
+    <section class="main_screen">
+        <div class="nav">
+            <ul class="authority">
+                <li>
+                    General
+                </li>
+                <li>
+                    Post's
+                </li>
+                <li>
+                    Message's
+                </li>
+                <li>
+                    Comment's
+                </li>
+            </ul>
+            <div class="logo">
+                <!-- <img src="img/logo.png" alt=""> -->
+            </div>
+        </div>
+        <div class="moniter">
+
+            <div class="welcome">
+                
+                    <h1>
+                        Content Managment System
+                    </h1>
+                    <p>Please login first to manage the data</p>
+                    <button>
+                        Login
+                    </button>
+                
+            </div>
+            <div class="general">
+                <div class="g_head">
+                    <h2><span style="color: green;">&#x272A; </span>What's about features?</h2>
+                    <p>
+                        Basically this website and CMS is under developing so it's not have alots of feature for now. Inshallah after a time we will add every required feature's.
+                    </p>
+                </div>
+                <div class="g_newposts">
+                    <div class="newpost_head">
+                        <h2>Future post's planning</h2> 
+                        <div class="plans">
+                            <button id="addnewpost" >Add new</button>
+                        <div class="addplan">
+                            <form class="planform" >
+                            <select required id="plancat" name ="dropdown">
+                            <option value = "Java" selected>Java</option>
+                            <option value = "C++">C++</option>
+                            <option value = "SQL" >SQL</option>
+                            <option value = "DSA" >DSA</option>
+                            <option value = "Research">Research</option>
+                            </select>
+                            <br>
+                            <input required type="text" id="plantopic" placeholder="Topic">
+                            <br>
+                            <input required type="date" id="plandate">
+                            <br>
+                            <button id="plansubmit" onclick="moveInDB()" title="Add new plan">
+                                Submit
+                            </button>
+                            <button id="plancancel">
+                                Cancel
+                            </button>
+                            </form>
+
+                        </div>
+                        </div>
+                    </div>
+                    <div id="pastplans" class="allfutureposts">
+                    </div>
+                </div>
+                <div class="feature_2">
+                    <h1> <span style="color: green;">&#x2708;</span> Our Next Target</h1>
+                    <p>Our next and one of the important target is to make a CMS which have a feature to create a post about related topic by using firebase realtime database and one more target is to create a Message and comments control system. Inshallah&#x2764;.</p>
+                </div>
+            </div>
+            <div class="messages">
+                <h1><span style="color: green;">&#x2709; </span>Message's</h1>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <div class="container_menu" onclick="MenuIcon(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+<script src="admin.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script>
+  const firebaseConfig = {
+  apiKey: "AIzaSyAI6bkhv7Z1d6RJEAXuSIPYNkTNUQTi60c",
+  authDomain: "researchweb-sajjad070.firebaseapp.com",
+  databaseURL: "https://researchweb-sajjad070-default-rtdb.firebaseio.com",
+  projectId: "researchweb-sajjad070",
+  storageBucket: "researchweb-sajjad070.appspot.com",
+  messagingSenderId: "933654276941",
+  appId: "1:933654276941:web:625b6743813e9b679ba504",
+  measurementId: "G-RWDKDRRZMK"
+};
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    
+  const rootRef = firebase.database().ref();
+  function PastPlans(){
+        var pastplans = document.getElementById('pastplans');
+        var PlanRef = firebase.database().ref('PostsPlans/');
+        PlanRef.once('value', function (snapshot) {
+            snapshot.forEach(function (itemSnapshot) {
+                var itemData = itemSnapshot.val();
+                var PastCat = itemData.post_category;
+                var PastTopic = itemData.post_topic;
+                var PlannedTime = new Date(itemData.plan_time).toLocaleDateString("en-us");
+                pastplans.innerHTML +="<div class='planned' >"+"<span class='postCategory'>"+PastCat+"</span>"+"<span class='postName'>"+PastTopic+"</span>"+"<span class='postTime'>"+PlannedTime+"</span>"+"</div>";
+            });
+        });
+    }
+    PastPlans();
+
+    function AllMessages(){
+        var showMessage = document.querySelector('.messages');
+        var Message = firebase.database().ref('messages/');
+        Message.once('value', function (snapshot) {
+            snapshot.forEach(function (itemSnapshot){
+                var itemData = itemSnapshot.val();
+                var fname = itemData.firstname;
+                var lname = itemData.lastname;
+                var email = itemData.email;
+                var message = itemData.message;
+                var time = new Date(itemData.when).toLocaleDateString("en-us");
+                showMessage.innerHTML +="<div class='message'><div class='m_name'>"+fname+" "+lname+"</div><div class='m_email'>"+email+"</div><div class='m_message'>"+message+"<span>"+time+"</span></div></div>"
+            });
+        });
+    }
+    AllMessages();
+function moveInDB(){
+    const commentsRef = rootRef.child('PostsPlans');
+    const cat=document.getElementById('plancat');
+    const topic=document.getElementById('plantopic');
+    const date=document.getElementById('plandate');
+        var checkEmpty1=0;
+        var checkEmpty2=0;
+        var checkEmpty3=0;
+        var catNew=[...document.getElementById('plancat').value];
+        var topicNew=[...document.getElementById('plantopic').value];
+        var dateNew=[...document.getElementById('plandate').value];
+      
+        for(let i=0;i<catNew.length;i++){
+          if(catNew[i]==" "){
+            checkEmpty1++;
+      
+          }
+        }
+        for(let i=0;i<topicNew.length;i++){
+          if(topicNew[i]==" "){
+            checkEmpty2++;
+      
+          }
+        }
+        for(let i=0;i<dateNew.length;i++){
+          if(dateNew[i]==" "){
+            checkEmpty3++;
+      
+          }
+        }
+        
+        if(checkEmpty1===catNew.length||checkEmpty2===topicNew.length||checkEmpty3===dateNew.length){
+          // Some fild is empty 
+          
+          }else{
+            
+            
+            var newPostRef = commentsRef.push();
+  
+            newPostRef.set({
+                post_category: cat.value.trim(),
+                post_topic: topic.value.trim(),
+                upload_date: date.value.trim(),
+                plan_time: firebase.database.ServerValue.TIMESTAMP
+            });
+          }
+      
+}
+</script>
+  </body>
+</html>

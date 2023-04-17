@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java-RW</title>
+  <link rel="stylesheet" href="./css/content.css" />
+  <link rel="stylesheet" href="./css/Portfolio.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/SYSTEMVIRUSOFSREJS.css" />
+  <link rel="stylesheet" href="./css/package.css">
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+  <link rel="stylesheet" href="assets/css/styleAlter.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/png" href="img/logo_page.png" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+  </script>
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="nav">
+      <div class="web__title" onclick="gohome()">
+        <h2 class="">
+          RESEARCH <span class="highlight">WEB</span>
+        </h2>
+      </div>
+
+      <ul id="MenueDisplay" class="nav__links">
+
+        <li class="nav__item ">
+          <a class="nav__link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav__item dropdown active">
+
+          <p id="allpage" class="nav__link" onclick="openCatMenu()">Posts<i class="fa fa-angle-down downangle"></i></i>
+          </p>
+          <ul class="content_pages">
+            <li onclick="post1()">
+              Data Structure
+            </li>
+            <li class="active" onclick="post2()">
+              Java
+            </li>
+            <li onclick="post3()">
+              SQL
+            </li>
+            <li onclick="post4()">
+              Research Based
+            </li>
+            <li onclick="post5()">
+              C++
+            </li>
+          </ul>
+
+        </li>
+        <li class="nav__item ">
+          <a class="nav__link" target=”_blank” href="Portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav__item ">
+          <a class="nav__link" href="Packages.html">Packages</a>
+        </li>
+        <li class="nav__item ">
+          <a class="nav__link  btn--show-modal openaccount" href="#contact">Contact</a>
+        </li>
+        <!-- <li class="nav__item search">
+            <input id="searchBar" onkeyup="showoption()" class="input_search" type="text" placeholder=" Search...">
+            <br>
+            
+              
+              <ul id="s_result" class="search_result hidden">
+       
+              </ul>
+            
+          </li> -->
+
+      </ul>
+
+    </div>
+  </header>
+
+  <!-- structure for any post -->
+  <!-- <div id="2" class="content_item post nextpostname" onclick="p_show(this)" >
+          <div class="thumbnail">
+            <img class="thumbnail_pic" src="" alt="" >
+            </div>
+            <div class="content">
+        
+              <span class="show_text">
+                <span class="mobile_text">
+                  Text for <786
+                </span>
+                  Text for >786px
+              </span>
+        
+              <span class="more_text">
+                content to show User
+                <img class="content_img" src="" alt="" >
+              </span>
+              <button class="read_more btn " onclick="p_hide(this)">Read more...</button>
+              <div class="publisher">Sajjad Ali
+                    <span class="publishOn">05/10/2021</span>
+                  </div>
+            </div>
+        </div> -->
+
+  <div class="tuts_section">
+
+    <div class="mainhead">
+      <h1 class="tutorials_topic">JAVA</h1>
+    </div>
+
+
+
+    <div class="row1">
+
+
+      <div class="content_list ">
+        <div id="4" class="content_item post Java Constructer " onclick="p_show(this)">
+          <div class="thumbnail">
+            <img class="thumbnail_pic" src="img/post2/java_p3.png" alt="">
+          </div>
+          <div class="content">
+
+            <span class="show_text">
+              <b>Part-3 </b> A constructer is basically a block which is same like a method but constructer
+              <span class="mobile_text">
+                does not have return type.Constructer is also a Connecter between diffrent Classes
+              </span>
+
+            </span>
+
+            <span class="more_text">
+              <img class="content_img" src="img/post2/java_p3.png" alt="java Constructer">
+              <h2 align="center">What is Constructer in Programming?</h2>
+              A constructer is basically a block which is same like a method but constructer does not have return
+              type.Constructer is also a Connecter between diffrent Classes
+              <h2 style="color: green;">Constructer vs Method</h2>
+              <ul>
+                <li>
+                  A constructor doesn’t have a return type.
+                </li>
+                <li>
+                  The name of the constructor must be the same as the name of the class.
+                </li>
+                <li>
+                  Unlike methods, constructors are not considered members of a class.
+                </li>
+                <li>
+                  A constructor is called automatically when a new instance of an object is created.
+                </li>
+              </ul>
+              <h2 style="color: green;">Basic Syntax :</h2>
+              <textarea readonly name="code" id="" rows="13">
+public ClassName(){
+
+          //code
+
+                      }
+// it's can be parametererized or not
+                
+public ClassName(parameter's){
+
+          //code
+
+                }            
+                    </textarea>
+              Lets Know how to create the Object of class
+              <textarea readonly name="code" id="" rows="2">
+ClassName variable=new ClassName();
+                    </textarea>
+              <h2 style="color: green;">Example : </h2>
+              A constructor allows you to provide initial values for class fields when you create the object. Suppose
+              that you have a class named Student that has fields named firstName and lastName. You can create a
+              constructor for the Student class.
+              <textarea readonly name="code" id="" rows="20">
+Public Class Student{
+
+  //Variables
+  public String firstName;
+  public String lastName;
+  
+  //constructer without paramenter's
+  public Student(){
+
+  }
+
+  //constructer with parameter's
+  public Student(String fname,String lname){
+    firstName=fname;
+    lastName=lname;
+  }
+}
+
+                    </textarea>
+              Create Object in Main method
+              <textarea readonly name="code" id="" cols="30" rows="18">
+
+public class Main {
+    
+  public static void main(String[] args) {
+                          
+      //Declare Variable's
+
+        String fname = "Sajjad";
+        String lname = "Ali";
+                          
+      //Create Object or Instance
+                      
+        Student stu=new Student(fname,lname);
+                      
+                        }
+}          
+                    </textarea>
+            </span>
+            <button class="read_more btn " onclick="p_hide(this)">Read more...</button>
+            <div class="publisher">Sajjad Ali
+              <span class="publishOn">08/10/2021</span>
+            </div>
+
+          </div>
+        </div>
+        <div id="3" class="content_item post Java Libraries " onclick="p_show(this)">
+          <div class="thumbnail">
+            <img class="thumbnail_pic" src="img/post2/java_p2.png" alt="">
+          </div>
+          <div class="content">
+
+            <span class="show_text">
+              <b>Part-2 </b>Libraries are an important part of the open source ecosystem.
+              <span class="mobile_text"> Open source libraries usually have great communities standing behind
+                them.</span>
+            </span>
+
+
+            <span class="more_text">
+              <img class="content_img" src="img/post2/java_p2.png" alt="">
+              <h2>Class Libraries in Java</h2>
+              There are many libraries but we will discuss Portfolio only some important libraries
+              <h2 style="color: rgb(20, 104, 76);">Java Standard Libraries : </h2>
+              <ul>
+                <li>
+                  <b><code>java.lang : </code></b> This always implicitly being imported as it contains everything you
+                  basically cannot program without String, Double, Enum, Math, etc.
+                </li>
+                <li>
+                  <b><code>java.util : </code></b> we can find all the collections and data structures available in Java
+                </li>
+                <li>
+                  <b><code>java.io : </code></b> it's used for reading files, working with pipes, streams and similar.
+
+                </li>
+                <li>
+                  <b><code>
+                          java.math : 
+                        </code></b>it's
+                  provides functionality for working with arbitrary-precision decimal (BigDecimal) and integer
+                  (BigInteger) values
+                </li>
+                <li>
+                  <b><code>java.swing : </code></b> This library is used for designing GUI of any java application
+                </li>
+              </ul>
+            </span>
+            <button class="read_more btn " onclick="p_hide(this)">Read more...</button>
+            <div class="publisher">Sajjad Ali
+              <span class="publishOn">07/10/2021</span>
+            </div>
+          </div>
+
+        </div>
+        <div id="2" class="content_item post Java Introduction_java" onclick="p_show(this)">
+          <div class="thumbnail">
+            <img class="thumbnail_pic" src="img/post2/java_p1.png" alt="java">
+          </div>
+          <div class="content">
+
+            <span class="show_text">
+              <b>Part-1</b> Java is an object-oriented programming language that produces software
+              <span class="mobile_text">for multiple platforms.Java derives much of its syntax from the C and C++
+                programming languages.</span>
+            </span>
+
+            <span class="more_text">
+              <img class="content_img" src="img/post2/java_p1.png" alt="java">
+              <h2>What is java?</h2>
+              Java is among the most popular programming languages out there, mainly because of how versatile and
+              compatible it is. Java can be used for a large number of things, including software development, mobile
+              applications, and large systems development. As of 2019, 88% market share of all smartphones run on
+              Android, the mobile operating system written in Java. Knowing Java opens a great deal of doors for you as
+              a developer.
+              <br>
+              Download Netbeans+JDK :
+              <a class="btn"
+                href="https://download.oracle.com/otn-pub/java/jdk-nb/8u111-8.2/jdk-8u111-nb-8_2-windows-x64.exe?AuthParam=1627850573_00bf9175c29610ef31790efcb1f097d1">click
+                here</a>
+              <h2>Feature of java</h2>
+              <ul>
+                <li>
+                  <b>Simple : </b> Java is a simple language because its syntax is simple, clean, and easy to
+                  understand. Complex and ambiguous concepts of C++ are either eliminated or re-implemented in Java. For
+                  example, pointer and operator overloading are not used in Java.
+                </li>
+                <li>
+                  <b>Object-Oriented : </b> In Java, everything is in the form of the object. It means it has some data
+                  and behavior. A program must have at least one class and object
+                </li>
+                <li>
+                  <b>Secure : </b>Java is a secure programming language because it has no explicit pointer and programs
+                  runs in the virtual machine. Java contains a security manager that defines the access of Java classes.
+                </li>
+              </ul>
+              <h2>Lets learn Java basics</h2>
+              When we consider a Java program, it can be defined as a collection of objects that communicate via
+              invoking each other's methods. Let us now briefly look into what do class, object, methods, and instance
+              variables mean.
+              <ul>
+                <li>
+                  <b>Object : </b>Objects have states and behaviors. Example: A dog has states - color, name, breed as
+                  well as behavior such as wagging their tail, barking, eating. An object is an instance of a class.
+                </li>
+                <li>
+                  <b>Class : </b>
+                  A class can be defined as a template/blueprint that describes the behavior/state that the object of
+                  its type supports.
+                </li>
+                <li>
+                  <b>Methods : </b>
+                  A method is basically a behavior. A class can contain many methods. It is in methods where the logics
+                  are written, data is manipulated and all the actions are executed
+                </li>
+                <li>
+                  <b>Instance Variables : </b>
+                  Each object has its unique set of instance variables. An object's state is created by the values
+                  assigned to these instance variables
+                </li>
+              </ul>
+              <b>Lets Code a Very Simple Program to print any word</b>
+              <textarea readonly name="code" id="" style=" width:95%;" rows="10">
+
+public class FirstProgram {
+    
+  public static void main(String []args) {
+                
+      System.out.println(" Research Web");
+                
+                }
+             }  
+                   </textarea><br>
+              In the above program first we Create a class of "FirstClass" name by using keyword <code>class</code> as
+              you see a keyword <code>public</code> it's the visibility of class, Inshallah we will learn it's later
+              post.In the class we created a <code>main(String []args)</code> method as we main method is work as driver
+              of whole program.Next one is <code>System.out.println()</code> this code is used for print purpose in
+              java.So this is too basic of java Inshallah in next Lecture we will move to further detail.
+            </span>
+            <button class="read_more btn " onclick="p_hide(this)">Read more...</button>
+            <div class="publisher">Sajjad Ali
+              <span class="publishOn">06/10/2021</span>
+            </div>
+          </div>
+        </div>
+        <div id="1" class="content_item post Java Basic_Questions " onclick="p_show(this)">
+          <div class="thumbnail">
+            <img class="thumbnail_pic" src="img/post2/questions.png" alt="programming Questions">
+          </div>
+          <div class="content">
+
+            <span class="show_text">
+              In this post we will show you all Basics Questions for any new Programmers.
+              <span class="mobile_text">
+                They have to practice all these Questions you Must have to try these All by yourself to make strong and
+                good logics.Keep Research for more logical questions
+              </span>
+            </span>
+
+            <span class="more_text">
+              <img class="content_img" src="img/post2/questions.png" alt="">
+              <h2><b>Practice Questions</b></h2>
+              <h2 align="center">Part 1</h2>
+              <hr class="solid">
+              <ol>
+                <li class="ques">
+                  Input/output of all basic data types
+                </li>
+                <li class="ques">
+                  Enter two numbers and perform all arithmetic operations.
+                </li>
+                <li class="ques">
+                  Calculate square of number
+                </li>
+              </ol>
+              <h2 align="center">Part 2</h2>
+              <hr class="solid">
+              <ol>
+                <li class="ques">
+                  Find maximum and minimum number from two number
+                </li>
+                <li class="ques">
+                  Find maximum and minimum number from three number
+                </li>
+                <li class="ques">
+                  Check the number is positive or Negative
+                </li>
+                <li class="ques">
+                  Check the number is divisible by 3 or 7
+                </li>
+                <li class="ques">
+                  Check even or odd
+                </li>
+                <li class="ques">
+                  Check prime or not
+                </li>
+                <li class="ques">
+                  Check the year is leap or not
+                </li>
+                <li class="ques">
+                  Print a week by enter week number
+                </li>
+                <li class="ques">
+                  Print a month by Enter month number
+                </li>
+                <li class="ques">
+                  Check the given angle's of triangle
+                </li>
+                <li class="ques">
+                  Input the Marks and calculate the Grade of Students
+                </li>
+                <li class="ques">
+                  Make a Simple Calculator by using switch case
+                </li>
+              </ol>
+              <h2 align="center">Part 3</h2>
+              <hr class="solid">
+              <ol>
+                <li class="ques">
+                  Print 1-100
+                </li>
+                <li class="ques">
+                  Print Alphabets in Upper and also Lower Case
+                </li>
+                <li class="ques">
+                  Print the sum of 1-n numbers
+                </li>
+                <li class="ques">
+                  Print the sum of all odds from 1-n
+                </li>
+                <li class="ques">
+                  Print a table of 5 and 7
+                </li>
+                <li class="ques">
+                  Count a number of digits in numbers(345 -> 3 digits)
+                </li>
+                <li class="ques">
+                  Count the sum of all digits in number(345 -> 13)
+                </li>
+                <li class="ques">
+                  Print a number in reverse order
+                </li>
+                <li class="ques">
+                  Check the number is palindrome or not
+                </li>
+                <li class="ques">
+                  Find frquency of each digit in number
+                </li>
+                <li class="ques">
+                  Find the power of Number using loops
+                </li>
+                <li class="ques">
+                  Find the sum all prime numbers 1 to n
+                </li>
+                <li class="ques">
+                  Check the number perfect square or not
+                </li>
+                <li class="ques">
+                  Print Fiboniacci series till n
+                </li>
+              </ol>
+              <h2 align="center">Part 4 </h2>
+              <hr class="solid">
+              <ol>
+                <li class="ques">
+                  Print the array in reverse
+                </li>
+                <li class="ques">
+                  Copy 1 array elements in to another array
+                </li>
+                <li class="ques">
+                  Print all even number from array
+                </li>
+                <li class="ques">
+                  Print all uniuqe numbers from array
+                </li>
+                <li class="ques">Insert,delete and update an array elements</li>
+                <li class="ques">
+                  Sort array elements
+                </li>
+                <li class="ques">
+                  Count total numbers of each digit in array
+                </li>
+                <li class="ques">
+                  Print 2d array in matrix form
+                </li>
+                <li class="ques">
+                  Add or sub two matrix
+                </li>
+                <li class="ques">
+                  Check whether the Matrix 1 is equal to Matrix 2 or not
+                  add,sub,transpose,multilpy for Matrix
+                </li>
+              </ol>
+              <h2 align="center">Part 5 </h2>
+              <hr class="solid">
+              <ol>
+                <li class="ques">
+                  Find length of a string
+                </li>
+                <li class="ques">
+                  Copy one string to another string.
+                </li>
+                <li class="ques">
+                  Concatenate two strings.
+                </li>
+                <li class="ques">
+                  Count total number of words in string
+                </li>
+                <li class="ques">
+                  Reverse the string
+                </li>
+                <li class="ques">
+                  Check the word is palindrome or not
+                </li>
+                <li class="ques">
+                  Find the frequency of each alphabet of word
+                </li>
+              </ol>
+              <h2 align="center">Part 6</h2>
+              <hr class="solid">
+              <ol>
+                <li class="ques">
+                  Print 1-100 without using loop
+                </li>
+                <li class="ques">
+                  Check even without using Multiple or Module
+                </li>
+                <li class="ques">
+                  Find maximum using Recursion from Array
+                </li>
+                <li class="ques">
+                  Get square of Number only by Using Resursion
+                </li>
+              </ol>
+            </span>
+            <button class="read_more btn " onclick="p_hide(this)">Read more...</button>
+            <div class="publisher">Sajjad Ali
+              <span class="publishOn">05/10/2021</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="button ">
+          <a id="loadmore" class="btn">Load more<i class="fa fa-angle-down downangle"></i></i></a>
+
+
+        </div>
+
+        <div id="allcomments">
+          <!-- <div align="center"><h3 id="commenthead">Comments</h3></div> -->
+          <form id="newcomment">
+
+            <input id="tbName" placeholder="Name/Identity" type="text" maxlength="20" required>
+            <br>
+
+            <textarea id="txComment" placeholder="Comment/Question" maxlength="4096" required
+              style="width:96%"></textarea>
+            <br>
+            <input class="btn" type="submit" id="btnSubmitComment" value="Post">
+            <div class="allcomments">
+              <div align="center">
+                <div class="showcmt btn" align="center">Hide Comments</div>
+              </div>
+              <ul id="pastcomments">
+
+              </ul>
+            </div>
+          </form>
+        </div>
+
+
+      </div>
+      <!-- <hr class="solid"> -->
+      <div class="column2">
+        <div class="search">
+          <input id="searchBar" onkeyup="showoption()" class="input_search" type="text" placeholder=" Search...">
+          <br>
+
+
+          <ul id="s_result" class="search_result hidden">
+
+          </ul>
+        </div>
+        <div class="AllPosts">
+          <h2><b>CATEGORIES</b></h2>
+          <ol class="post_catagories">
+            <li onclick="post1()">
+              Data Structure
+            </li>
+            <li class="active" onclick="post2()">
+              Java
+            </li>
+            <li onclick="post3()">
+              SQL
+            </li>
+            <li onclick="post4()">
+              Research Based
+            </li>
+            <li onclick="post5()">
+              C++
+            </li>
+          </ol>
+          <h2><b>RELATED POSTS</b></h2>
+          <ol id="post_tags"></ol>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- containers for bar -->
+  <div class="container_menu" onclick="MenuIcon(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <!-- <div class="container_social">
+      <div class="bar">
+        L<br>I <br>N<br>K
+      </div>
+    </div>
+    <div class="social_icons">
+      <div class="s_icon">
+        <a class="social-whatsapp" href="https://wa.me/+923408586646?text=" target="_blank"
+          ><i class="fa fa-whatsapp"></i
+        ></a>
+      </div>
+      <div class="s_icon">
+        <a class="social-tw" href="mailto:sajjadali9470@gmail.com"><i class="fa fa-envelope"></i></a>
+      </div>
+
+      <div class="s_icon">
+        <a class="social-fb" href="https://www.facebook.com/sajjadali9470"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+      </div>
+
+     <div class="s_icon">
+      <a class="social-li" href="https://www.linkedin.com/in/sajjad-ali-6067751a6/"
+      ><i class="fab fa-linkedin-in"></i
+    ></a>
+     </div>
+
+    <div class="s_icon">
+      <a class="social-in" href="https://www.instagram.com/sajjadali070/"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+    </div>
+
+    </div> -->
+  <div id="totalPosts">
+  <!-- ***** Contact Us Start ***** -->
+  <section class="section colored" id="contact-us">
+    <div class="container">
+      <!-- ***** Section Title Start ***** -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="center-heading">
+            <h2 class="section-title">Talk To Us</h2>
+          </div>
+        </div>
+        <div class="offset-lg-3 col-lg-6">
+          <div class="center-text">
+            <p>For any queries or projects you can contact us</p>
+          </div>
+        </div>
+      </div>
+      <!-- ***** Section Title End ***** -->
+
+      <div class="row">
+        <!-- ***** Contact Text Start ***** -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <h5 class="margin-bottom-30">Keep in touch</h5>
+          <div class="contact-text">
+            <p>CPO 10/8 Majeed SRE Dalmian, near National Stadium road ,Karachi East
+              <br>Pakistan
+            </p>
+            <p>Please enter your correct information. Because we will contact you on the base of given information. <br>
+              Thank you
+            </p>
+          </div>
+        </div>
+        <!-- ***** Contact Text End ***** -->
+
+        <!-- ***** Contact Form Start ***** -->
+        <div class="col-lg-8 col-md-6 col-sm-12">
+          <div class="contact-form">
+            <form id="contact" action="" method="get">
+              <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="fname" placeholder="First Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="lname" placeholder="Last Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="email" type="email" class="form-control" id="email" placeholder="E-Mail Address"
+                      required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message"
+                      required=""></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- ***** Contact Form End ***** -->
+      </div>
+    </div>
+  </section>
+  <!-- ***** Contact Us End ***** -->
+  <!-- Footer -->
+  <footer>
+    <div class="parts part1">
+      <a class="social-tw" href="mailto:sajjadali9470@gmail.com"><i class="fa fa-envelope"></i></a>
+      <a class="social-fb" href="https://www.facebook.com/sajjadali9470" target="_blank"><i
+          class="fab fa-facebook-f"></i></a>
+      <a class="social-li" href="https://www.linkedin.com/in/sajjad-ali-6067751a6/" target="_blank"><i
+          class="fab fa-linkedin-in"></i></a>
+      <a class="social-in" href="https://www.instagram.com/sajjadali070/"><i class="fab fa-instagram"></i></a>
+      <a class="social-whatsapp" href="https://wa.me/+923408586646?text=" target="_blank"><i
+          class="fa fa-whatsapp"></i></a>
+    </div>
+    <div class="parts part2">
+      <h3 style="color: white;">&copy; Copyright by
+        ResearchWeb</h3>
+    </div>
+  </footer>
+  <button onclick="scrollTopAnimated()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+ 
+  <div class="overlay hidden"></div>
+
+  <script src="./js/script.js"></script>
+  <script src="./js/content1.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script>
+
+    setInterval(() => {
+      d = new Date();
+      htime = d.getHours();
+
+      mtime = d.getMinutes();
+
+      stime = d.getSeconds();
+      Ctime = htime + ":" + mtime + ":" + stime;
+    });
+
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAI6bkhv7Z1d6RJEAXuSIPYNkTNUQTi60c",
+      authDomain: "researchweb-sajjad070.firebaseapp.com",
+      databaseURL: "https://researchweb-sajjad070-default-rtdb.firebaseio.com",
+      projectId: "researchweb-sajjad070",
+      storageBucket: "researchweb-sajjad070.appspot.com",
+      messagingSenderId: "933654276941",
+      appId: "1:933654276941:web:625b6743813e9b679ba504",
+      measurementId: "G-RWDKDRRZMK"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const rootRef = firebase.database().ref();
+    const commentsRef = rootRef.child('post2');
+
+
+
+    document.getElementById("btnSubmitComment").addEventListener("click", function () {
+      var checkEmpty1 = 0;
+      var checkEmpty2 = 0;
+      var nameNew = [...document.getElementById('tbName').value];
+      var CommentNew = [...document.getElementById('txComment').value];
+
+      for (let i = 0; i < CommentNew.length; i++) {
+        if (CommentNew[i] == " ") {
+          checkEmpty1++;
+
+        }
+      }
+      for (let i = 0; i < nameNew.length; i++) {
+        if (nameNew[i] == " ") {
+          checkEmpty2++;
+
+        }
+      }
+      if (checkEmpty1 === CommentNew.length || checkEmpty2 === nameNew.length) {
+
+      } else {
+
+        var newcomment = document.getElementById('txComment').value.replace(/\n/g, "<br>");
+
+        var newPostRef = commentsRef.push();
+
+        newPostRef.set({
+          name: document.getElementById('tbName').value.trim(),
+          comment: newcomment.trim(),
+          frompage: location.pathname,
+          time: Ctime,
+          when: firebase.database.ServerValue.TIMESTAMP
+        });
+      }
+
+
+    });
+
+    function showpastcomments() {
+      var showat = document.getElementById('pastcomments');
+
+      var commentsRef = firebase.database().ref('post2/');
+      commentsRef.once('value', function (snapshot) {
+        snapshot.forEach(function (itemSnapshot) {
+
+          var itemData = itemSnapshot.val();
+          var comment = itemData.comment;
+          var name = itemData.name;
+          var time = itemData.time;
+          var when = new Date(itemData.when).toLocaleDateString("en-us");
+
+          showat.innerHTML += "<li>" + "<span>" + name + "</span> " + time + " &rightarrow; " + when +
+            "<div>" + comment + "</div></li>";
+        })
+      })
+    }
+    showpastcomments();
+    const messageRef = rootRef.child('messages');
+    document.getElementById("btnSubmitmessage").addEventListener("click", function () {
+      var emtyfield1 = 0;
+      var emtyfield2 = 0;
+      var emtyfield3 = 0;
+      var emtyfield4 = 0;
+      var fnameNew = [...document.getElementById('fname').value];
+      var lnameNew = [...document.getElementById('lname').value];
+      var emailNew = [...document.getElementById('email').value];
+      var messageNew = [...document.getElementById('message').value];
+
+      for (let i = 0; i < fnameNew.length; i++) {
+        if (fnameNew[i] == " ") {
+          emtyfield1++;
+
+        }
+      }
+      for (let i = 0; i < lnameNew.length; i++) {
+        if (lnameNew[i] == " ") {
+          emtyfield2++;
+
+        }
+      }
+      for (let i = 0; i < emailNew.length; i++) {
+        if (emailNew[i] == " ") {
+          emtyfield3++;
+
+        }
+      }
+      for (let i = 0; i < messageNew.length; i++) {
+        if (messageNew[i] == " ") {
+          emtyfield4++;
+
+        }
+      }
+      if (emtyfield1 === fnameNew.length || emtyfield2 === lnameNew.length || emtyfield3 === emailNew.length || emtyfield4 === messageNew.length) {
+
+      } else {
+
+        var messagenew = document.getElementById('message').value.replace(/\n/g, "<br>");
+
+        var newMessageRef = messageRef.push();
+
+        newMessageRef.set({
+          firstname: document.getElementById('fname').value.trim(),
+          lastname: document.getElementById('lname').value.trim(),
+          email: document.getElementById('email').value.trim(),
+          message: messagenew.trim(),
+          time: Ctime,
+          when: firebase.database.ServerValue.TIMESTAMP
+        });
+      }
+
+
+    });
+  </script>
+
+</body>
+
+</html>

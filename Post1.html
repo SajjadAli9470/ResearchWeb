@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSA-RW</title>
+
+  <link rel="stylesheet" href="./css/content.css" />
+  <link rel="stylesheet" href="./css/Portfolio.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/SYSTEMVIRUSOFSREJS.css" />
+  <link rel="stylesheet" href="./css/package.css">
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+  <link rel="stylesheet" href="assets/css/styleAlter.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/png" href="img/logo_page.png" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+  </script>
+</head>
+
+<body>
+
+
+  <header class="header">
+    <div class="nav">
+      <div class="web__title" onclick="gohome()">
+        <h2 class="">
+          RESEARCH <span class="highlight">WEB</span>
+        </h2>
+      </div>
+
+      <ul id="MenueDisplay" class="nav__links">
+
+        <li class="nav__item ">
+          <a class="nav__link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav__item dropdown active">
+
+          <p id="allpage" class="nav__link" onclick="openCatMenu()">Posts<i class="fa fa-angle-down downangle"></i></i>
+          </p>
+
+          <ul class="content_pages">
+            <li class="active" onclick="post1()">
+              Data Structure
+            </li>
+            <li onclick="post2()">
+              Java
+            </li>
+            <li onclick="post3()">
+              SQL
+            </li>
+            <li onclick="post4()">
+              Research Based
+            </li>
+            <li onclick="post5()">
+              C++
+            </li>
+          </ul>
+
+        </li>
+        <li class="nav__item ">
+          <a class="nav__link" target=”_blank” href="Portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav__item ">
+          <a class="nav__link" href="Packages.html">Packages</a>
+        </li>
+        <li class="nav__item ">
+          <a class="nav__link  btn--show-modal openaccount" href="#contact">Contact</a>
+        </li>
+        <!-- <li class="nav__item search">
+            <input id="searchBar" onkeyup="showoption()" class="input_search" type="text" placeholder=" Search...">
+            <br>
+            
+              
+              <ul id="s_result" class="search_result hidden">
+       
+              </ul>
+            
+          </li> -->
+
+      </ul>
+
+    </div>
+  </header>
+
+  <!-- structure for any post -->
+  <!-- <div id="2" class="content_item post DSA nextpostname" onclick="p_show(this)" >
+              <div class="thumbnail">
+                <img class="thumbnail_pic" src="./img/post1/p_2.png" alt="" >
+                </div>
+                <div class="content">
+            
+                  <span class="show_text">
+                     
+                    <span class="mobile_text">
+                      
+                    </span>
+    
+                  </span>
+            
+                  <span class="more_text">
+                    <img class="content_img" src="./img/post1/p_2.png" alt="" >
+                  </span>
+                  <button class="read_more btn " onclick="p_hide(this)">Read more...</button>
+                  <div class="publisher">Sajjad Ali
+                        <span class="publishOn">05/10/2021</span>
+                      </div>
+                </div>
+            </div>-->
+
+  <div class="tuts_section">
+
+    <div class="mainhead">
+      <!-- <hr class="solid">   -->
+      <h1 class="tutorials_topic">DATA STRUCTURE</h1>
+      <!-- <hr class="solid">   -->
+    </div>
+    <div class="row1">
+
+      <div class="content_list ">
+        <div id="2" class="content_item post DSA Linear_Data_Structure" onclick="p_show(this)">
+          <div class="thumbnail">
+            <img class="thumbnail_pic" src="./img/post1/p_2.png" alt="">
+          </div>
+          <div class="content">
+
+            <span class="show_text">
+              A data structure is said to be linear if its elements form a sequence.
+              <span class="mobile_text">
+                linear data structure means processing of the data item can be in sequence that is in linear.
+              </span>
+
+            </span>
+
+            <span class="more_text">
+              <img class="content_img" src="./img/post1/p_2.png" alt="">
+              A data structure is said to be linear if its elements form a sequence.linear data structure means
+              processing of the data item can be in sequence that is in linear.
+              <b>Types: </b>
+              <ul>
+                <li>
+                  Arrays
+                </li>
+                <li>
+                  Stacks
+                </li>
+                <li>
+                  Queues
+                </li>
+                <li>
+                  Linked List
+                </li>
+                <li>
+                  Hash tables
+                </li>
+              </ul>
+
+
+
+              <img src="./img/post1/p_2_1.png" alt="" class="content_img">
+              <h1>
+                <b>Arrays</b>
+              </h1>
+
+              Arrays are the most fundamental and basic data structure. If you want to build other structures like
+              queues, stacks, or hash tables, it’s best to first know how to build arrays. An array is a group of
+              similar data stored together neatly in a memory location. Each piece of data in an array is given a
+              positive numerical value. This is called the index. Index numbers make it easy to determine the position
+              of each data piece or element by adding a number to a base value. The base value is usually the first
+              element’s memory location. Many programming languages give the starting index of an array the value of 0.
+
+
+              <img src="./img/post1/p_2_2.png" alt="" class="content_img">
+              <h1>
+                <b>Stacks</b>
+              </h1>
+              If you’ve ever used the Undo function on your computer, you can thank the stack data structure. Stacks
+              work on the Last In First Out (LIFO) method. Picture a stack of books. The last one you place on top of
+              the stack is the first one you can remove. In order to safely remove the bottom book (the first one you
+              laid down), you would need to pull away all of the books on top of it.
+              <img src="./img/post1/p_2_3.png" alt="" class="content_img">
+              <h1>
+                <b>Queues</b>
+              </h1>
+              Queues and stacks are alike in that they both keep elements stored sequentially. The difference is that
+              Queue uses the First in First Out (FIFO) method instead of the Last in First Out (LIFO) method. To
+              understand a queue, think of people lined up to get on a rollercoaster. The first person in line is the
+              first person to exit the line and get on the ride. The last person in line will be the last one out of the
+              line.
+              <img src="./img/post1/p_2_4.png" alt="" class="content_img">
+              <h1>
+                <b>Link Lists</b>
+              </h1>
+              Linked lists can contain anything including strings, characters, or numbers. They can be unsorted or
+              sorted. And they can contain duplicate elements or all unique elements. In an array, the elements are
+              indexed and you can instantly get to an element. In a linked list, though, you have to start with the head
+              and work your way through until you get to the desired element. It takes linear time, so it’s quite a bit
+              slower. The advantage of linked lists is that you can insert and delete elements to the beginning of the
+              list in constant time, or very quickly.
+              <img src="./img/post1/p_2_5.png" alt="" class="content_img">
+              <h1>
+                <b>Hash Table</b>
+              </h1>
+              Hash tables are a data structure that can be implemented as a linear or non-linear data structure. Often,
+              they are implemented as a linear data structure. Hash tables are used to map keys to values. If you had a
+              list of names, for example, a hash table might be used to identify a person’s phone number using their
+              name. Usually, hash tables are built using arrays.
+            </span>
+            <button class="read_more btn " onclick="p_hide(this)">Read more...</button>
+            <div class="publisher">Sajjad Ali
+              <span class="publishOn">05/10/2021</span>
+            </div>
+          </div>
+        </div>
+        <div id="1" class="content_item post DSA DSA_Introduction" onclick="p_show(this)">
+          <div class="thumbnail">
+            <img class="thumbnail_pic" src="./img/post1/p_1.png" alt="">
+          </div>
+          <div class="content">
+
+            <span class="show_text">
+              Data structure is defined as a way to organize data like store , fetch or arranging
+              <span class="mobile_text">
+                etc. it's the very important part of computer science algorithm for OS,AI,ML and many more.
+              </span>
+
+            </span>
+
+            <span class="more_text">
+              <img class="content_img" src="./img/post1/p_1.png" alt="">
+
+              <b>What is data structure?</b>
+              <br>
+              A data structure in computer science is a system used to store data, keep it organized, and enable easy
+              modification and access. Put simply, a data structure refers to a group of data values, how they relate to
+              each other, and the operations or functions that can be carried out on them. <br>
+              <b>Why data structure?</b>
+              <br>
+              Different data structures are suited for different problems. Some data structures are useful for simple
+              general problems, such as retrieving data that has been stored with a specific identifier. For example, an
+              online dictionary can be structured so that it can retrieve the definition of a word. On the other hand,
+              specialized data structures have been devised to solve complex specific search problems.The simplest data
+              structure is the one-dimensional (linear) array, in which stored elements are numbered with consecutive
+              integers and contents are accessed by these numbers. Data items stored nonconsecutively in memory may be
+              linked by pointers (memory addresses stored with items to indicate where the “next” item or items in the
+              structure are located). Many algorithms have been developed for sorting data efficiently; these apply to
+              structures residing in main memory and also to structures that constitute information systems and
+              databases. More-complex data structures may incorporate elements of simpler data structures.
+              <br><b>Diffrent types of Data structure : </b><br>
+              Linear Data Structure :
+              <ul>
+                <li>
+                  Arrays
+                </li>
+                <li>
+                  Stacks
+                </li>
+                <li>
+                  Queues
+                </li>
+                <li>
+                  Linked Lists
+                </li>
+                <li>
+                  Hash Tables
+                </li>
+              </ul>
+              <br>
+              Non Linear Data Structure :
+              <ul>
+                <li>Trees</li>
+                <li>Graphs</li>
+              </ul>
+            </span>
+            <button class="read_more btn " onclick="p_hide(this)">Read more...</button>
+            <div class="publisher">Sajjad Ali
+              <span class="publishOn">10/10/2021</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="button">
+          <a id="loadmore" class="btn">Load more<i class="fa fa-angle-down downangle"></i></i></a>
+        </div>
+
+        <div id="allcomments">
+          <!-- <div align="center"><h3 id="commenthead">Comments</h3></div> -->
+          <form id="newcomment">
+
+            <input id="tbName" placeholder="Name/Identity" type="text" maxlength="20" required>
+            <br>
+
+            <textarea id="txComment" placeholder="Comment/Question" maxlength="4096" required
+              style="width:96%"></textarea>
+            <br>
+            <input class="btn" type="submit" id="btnSubmitComment" value="Post">
+            <div class="allcomments">
+              <div align="center">
+                <div class="showcmt btn" align="center">Hide Comments</div>
+              </div>
+              <ul id="pastcomments">
+
+
+              </ul>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="column2">
+        <div class="search">
+          <input id="searchBar" onkeyup="showoption()" class="input_search" type="text" placeholder=" Search...">
+          <br>
+
+
+          <ul id="s_result" class="search_result hidden">
+
+          </ul>
+        </div>
+        <div class="AllPosts">
+          <h2><b>CATEGORIES</b></h2>
+          <ol class="post_catagories">
+            <li class="active" onclick="post1()">
+              Data Structure
+            </li>
+            <li onclick="post2()">
+              Java
+            </li>
+            <li onclick="post3()">
+              SQL
+            </li>
+            <li onclick="post4()">
+              Research Based
+            </li>
+            <li onclick="post5()">
+              C++
+            </li>
+          </ol>
+          <h2><b>RELATED POSTS</b></h2>
+          <ol id="post_tags"></ol>
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="container_menu" onclick="MenuIcon(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <!-- ***** Contact Us Start ***** -->
+    <section class="section colored" id="contact-us">
+      <div class="container">
+        <!-- ***** Section Title Start ***** -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="center-heading">
+              <h2 class="section-title">Talk To Us</h2>
+            </div>
+          </div>
+          <div class="offset-lg-3 col-lg-6">
+            <div class="center-text">
+              <p>For any queries or projects you can contact us</p>
+            </div>
+          </div>
+        </div>
+        <!-- ***** Section Title End ***** -->
+  
+        <div class="row">
+          <!-- ***** Contact Text Start ***** -->
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <h5 class="margin-bottom-30">Keep in touch</h5>
+            <div class="contact-text">
+              <p>CPO 10/8 Majeed SRE Dalmian, near National Stadium road ,Karachi East
+                <br>Pakistan
+              </p>
+              <p>Please enter your correct information. Because we will contact you on the base of given information. <br>
+                Thank you
+              </p>
+            </div>
+          </div>
+          <!-- ***** Contact Text End ***** -->
+  
+          <!-- ***** Contact Form Start ***** -->
+          <div class="col-lg-8 col-md-6 col-sm-12">
+            <div class="contact-form">
+              <form id="contact" action="" method="get">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="fname" placeholder="First Name" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="name" type="text" class="form-control" id="lname" placeholder="Last Name" required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input name="email" type="email" class="form-control" id="email" placeholder="E-Mail Address"
+                        required="">
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message"
+                        required=""></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- ***** Contact Form End ***** -->
+        </div>
+      </div>
+    </section>
+    <!-- ***** Contact Us End ***** -->
+
+      <footer>
+      <div class="parts part1">
+        <a class="social-tw" href="mailto:sajjadali9470@gmail.com"><i class="fa fa-envelope"></i></a>
+        <a class="social-fb" href="https://www.facebook.com/sajjadali9470" target="_blank"><i
+            class="fab fa-facebook-f"></i></a>
+        <a class="social-li" href="https://www.linkedin.com/in/sajjad-ali-6067751a6/" target="_blank"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a class="social-in" href="https://www.instagram.com/sajjadali070/"><i class="fab fa-instagram"></i></a>
+        <a class="social-whatsapp" href="https://wa.me/+923408586646?text=" target="_blank"><i
+            class="fa fa-whatsapp"></i></a>
+      </div>
+      <div class="parts part2">
+        <h3 style="color: white;">&copy; Copyright by
+          ResearchWeb</h3>
+      </div>
+    </footer>
+    <button onclick="scrollTopAnimated()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+
+
+
+
+
+
+
+
+    <script src="./js/script.js"></script>
+    <script src="./js/content1.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script>
+
+      setInterval(() => {
+        d = new Date();
+        htime = d.getHours();
+
+        mtime = d.getMinutes();
+
+        stime = d.getSeconds();
+        Ctime = htime + ":" + mtime + ":" + stime;
+      });
+
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyAI6bkhv7Z1d6RJEAXuSIPYNkTNUQTi60c",
+        authDomain: "researchweb-sajjad070.firebaseapp.com",
+        databaseURL: "https://researchweb-sajjad070-default-rtdb.firebaseio.com",
+        projectId: "researchweb-sajjad070",
+        storageBucket: "researchweb-sajjad070.appspot.com",
+        messagingSenderId: "933654276941",
+        appId: "1:933654276941:web:625b6743813e9b679ba504",
+        measurementId: "G-RWDKDRRZMK"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      const rootRef = firebase.database().ref();
+
+      const commentsRef = rootRef.child('post1');
+      const admin = commentsRef.child('recommete')
+
+      document.getElementById("btnSubmitComment").addEventListener("click", function () {
+        var checkEmpty1 = 0;
+        var checkEmpty2 = 0;
+        var nameNew = [...document.getElementById('tbName').value];
+        var CommentNew = [...document.getElementById('txComment').value];
+
+        for (let i = 0; i < CommentNew.length; i++) {
+          if (CommentNew[i] == " ") {
+            checkEmpty1++;
+
+          }
+        }
+        for (let i = 0; i < nameNew.length; i++) {
+          if (nameNew[i] == " ") {
+            checkEmpty2++;
+
+          }
+        }
+        if (checkEmpty1 === CommentNew.length || checkEmpty2 === nameNew.length) {
+
+        } else {
+
+          var newcomment = document.getElementById('txComment').value.replace(/\n/g, "<br>");
+
+          var newPostRef = commentsRef.push();
+
+          newPostRef.set({
+            name: document.getElementById('tbName').value.trim(),
+            comment: newcomment.trim(),
+            frompage: location.pathname,
+            time: Ctime,
+            when: firebase.database.ServerValue.TIMESTAMP
+          });
+        }
+
+
+      });
+
+      function showpastcomments() {
+        var showat = document.getElementById('pastcomments');
+
+        var commentsRef = firebase.database().ref('post1/');
+        commentsRef.once('value', function (snapshot) {
+          snapshot.forEach(function (itemSnapshot) {
+
+            var itemData = itemSnapshot.val();
+            var comment = itemData.comment;
+            var name = itemData.name;
+            var time = itemData.time;
+            var when = new Date(itemData.when).toLocaleDateString("en-us");
+
+            showat.innerHTML += "<li>" + "<span>" + name + "</span> " + time + " &rightarrow; " + when +
+              "<div>" + comment + "</div></li>";
+          })
+        })
+      }
+      showpastcomments()
+      const messageRef = rootRef.child('messages');
+      document.getElementById("btnSubmitmessage").addEventListener("click", function () {
+        var emtyfield1 = 0;
+        var emtyfield2 = 0;
+        var emtyfield3 = 0;
+        var emtyfield4 = 0;
+        var fnameNew = [...document.getElementById('fname').value];
+        var lnameNew = [...document.getElementById('lname').value];
+        var emailNew = [...document.getElementById('email').value];
+        var messageNew = [...document.getElementById('message').value];
+
+        for (let i = 0; i < fnameNew.length; i++) {
+          if (fnameNew[i] == " ") {
+            emtyfield1++;
+
+          }
+        }
+        for (let i = 0; i < lnameNew.length; i++) {
+          if (lnameNew[i] == " ") {
+            emtyfield2++;
+
+          }
+        }
+        for (let i = 0; i < emailNew.length; i++) {
+          if (emailNew[i] == " ") {
+            emtyfield3++;
+
+          }
+        }
+        for (let i = 0; i < messageNew.length; i++) {
+          if (messageNew[i] == " ") {
+            emtyfield4++;
+
+          }
+        }
+        if (emtyfield1 === fnameNew.length || emtyfield2 === lnameNew.length || emtyfield3 === emailNew.length || emtyfield4 === messageNew.length) {
+
+        } else {
+
+          var messagenew = document.getElementById('message').value.replace(/\n/g, "<br>");
+
+          var newMessageRef = messageRef.push();
+
+          newMessageRef.set({
+            firstname: document.getElementById('fname').value.trim(),
+            lastname: document.getElementById('lname').value.trim(),
+            email: document.getElementById('email').value.trim(),
+            message: messagenew.trim(),
+            time: Ctime,
+            when: firebase.database.ServerValue.TIMESTAMP
+          });
+        }
+
+
+      });
+    </script>
+
+</body>
+
+</html>

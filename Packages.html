@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ResearchWeb-Keep research to Learn more...</title>
+
+
+  <link rel="stylesheet" href="./css/content.css" />
+  <link rel="stylesheet" href="./css/Portfolio.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/SYSTEMVIRUSOFSREJS.css" />
+  <link rel="stylesheet" href="./css/package.css">
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+  <link rel="stylesheet" href="assets/css/styleAlter.css">
+
+  <!-- Additional CSS Files -->
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/png" href="img/logo_page.png" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js">
+  </script>
+
+</head>
+
+<body>
+
+
+  <header class="header">
+
+    <div class="nav">
+
+      <div class="web__title" onclick="gohome()">
+        <h2 class="">
+          RESEARCH <span class="highlight">WEB</span>
+        </h2>
+      </div>
+
+      <ul id="MenueDisplay" class="nav__links">
+
+        <li class="nav__item ">
+          <a class="nav__link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav__item DekhoMenu dropdown">
+
+          <p id="allpage" class=" nav__link" onclick="openCatMenu()">Posts<i class="fa fa-angle-down downangle"></i></p>
+
+          <ul class="content_pages">
+            <li onclick="post1()">
+              Data Structure
+            </li>
+            <li onclick="post2()">
+              Java
+            </li>
+            <li onclick="post3()">
+              SQL
+            </li>
+            <li onclick="post4()">
+              Research Based
+            </li>
+            <li onclick="post5()">
+              C++
+            </li>
+          </ul>
+
+        </li>
+        <li class="nav__item ">
+          <a class="nav__link" target=”_blank” href="Portfolio.html">Portfolio</a>
+        </li>
+        <li id="package" class="nav__item active">
+          <a class="nav__link" href="Packages.html">Packages</a>
+        </li>
+        <li class="nav__item ">
+          <a class="nav__link  btn--show-modal openaccount" href="#contact">Contact</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </header>
+
+
+  <!-- ***** Pricing Plans Start ***** -->
+  <section class="section colored" id="pricing-plans">
+    <div class="container">
+      <!-- ***** Section Title Start ***** -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="center-heading">
+            <h2 class="section-title">Pricing Plans</h2>
+          </div>
+        </div>
+        <div class="offset-lg-3 col-lg-6">
+          <div class="center-text">
+            <p>You will be getting top-notch services from one of the best consultants in the field. All the packages
+              are cost-effective. You will get the best packages with 24 hours support from customer services with all
+              assistance you need to boost your business on the web at that price.</p>
+          </div>
+        </div>
+      </div>
+      <!-- ***** Section Title End ***** -->
+
+      <div class="row">
+        <!-- ***** Pricing Item Start ***** -->
+        <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+          <div class="pricing-item">
+            <div class="pricing-header">
+              <h3 class="pricing-title">Starter</h3>
+            </div>
+            <div class="pricing-body">
+              <div class="price-wrapper">
+                <span class="currency">$</span>
+                <span class="price">50</span>
+                <span class="period">Project</span>
+              </div>
+              <ul class="list">
+                <li class="active">Single Page</li>
+                <li>logo</li>
+                <li class="active">Image Stock</li>
+                <li class="active">Deployment</li>
+                <li class="active">Resposive</li>
+                <li>Documentation</li>
+                <li>24/7 Support</li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <a href="#" class="main-button" onclick="gotoTawlk()">Lets Talk</a>
+            </div>
+          </div>
+        </div>
+        <!-- ***** Pricing Item End ***** -->
+
+        <!-- ***** Pricing Item Start ***** -->
+        <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+          <div class="pricing-item active">
+            <div class="pricing-header">
+              <h3 class="pricing-title">Premium</h3>
+            </div>
+            <div class="pricing-body">
+              <div class="price-wrapper">
+                <span class="currency">$</span>
+                <span class="price">100</span>
+                <span class="period">project</span>
+              </div>
+              <ul class="list">
+                <li class="active">3 Unique Pages</li>
+                <li class="active">Logo</li>
+                <li class="active">Deployment</li>
+                <li class="active">Responsive</li>
+                <li class="active">24/7 Support</li>
+                <li>CMS</li>
+                <li>Documentation</li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <a href="#" class="main-button" onclick="gotoTawlk()">Lets Talk</a>
+            </div>
+          </div>
+        </div>
+        <!-- ***** Pricing Item End ***** -->
+
+        <!-- ***** Pricing Item Start ***** -->
+        <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+          <div class="pricing-item">
+            <div class="pricing-header">
+              <h3 class="pricing-title">Advanced</h3>
+            </div>
+            <div class="pricing-body">
+              <div class="price-wrapper">
+                <span class="currency">$</span>
+                <span class="price">150</span>
+                <span class="period">monthly</span>
+              </div>
+              <ul class="list">
+                <li class="active">10 Unique Pages</li>
+                <li class="active">Logo</li>
+                <li class="active">Deployment</li>
+                <li class="active">Responsive</li>
+                <li class="active">24/7 Support</li>
+                <li class="active">CMS</li>
+                <li class="active">Documentation</li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <a href="#" class="main-button" onclick="gotoTawlk()">Lets Talk</a>
+            </div>
+          </div>
+        </div>
+        <!-- ***** Pricing Item End ***** -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- jQuery -->
+  <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- Plugins -->
+  <script src="assets/js/scrollreveal.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/imgfix.min.js"></script>
+
+  <!-- Global Init -->
+  <script src="assets/js/custom.js"></script>
+
+  <!-- <section class="main_pack">
+    <div class="head_pack">
+      <h1 class="pack_head">Competitive Pricing Plans
+      </h1>
+      <h2>
+        Assisting you with complete brand development services for seed sized and monster sized organizations.
+      </h2>
+    </div>
+  </section>
+
+  <section class="allpackages">
+    <div class="pack">
+      <div>
+        <h1>
+          Our Packages
+        </h1>
+        <hr class="solid">
+      </div>
+      <h2>
+        You will be getting top-notch services from one of the best consultants in the field. All the packages are
+        cost-effective. You will get the best packages with 24 hours support from customer services with all assistance
+        you need to boost your business on the web at that price.
+      </h2>
+    </div>
+    <div class="pack_tags">
+      <div id="wdev">Web Design</div>
+      <div id="wpress"> Wordpress</div>
+      <div id="gd"> Graphics Design</div>
+    </div>
+    <div class="packages web">
+
+      <div class="pack1 package basic">
+
+        <div class="pack_header">
+          <h1>
+            BASIC
+          </h1>
+          <h2>Package</h2>
+
+        </div>
+        <div class="price">
+          <div class="price_discription">
+            <span class="pack_price">
+              120</span>
+            <span class="currency">$</span>
+
+          </div>
+        </div>
+        <div class="features">
+          <ul class="feature_list">
+            <li class="check">
+              Single Page
+            </li>
+            <li class="cross">
+              Free logo
+            </li>
+            <li class="check">
+              Image Stock
+            </li>
+            <li class="check">
+              Deployment to Host
+            </li>
+            <li class="cross">
+              Full Documentation
+            </li>
+            <li class="check">
+              Responsive
+            </li>
+            <li class="cross">
+              24/7 guidance
+            </li>
+          </ul>
+          <div class="deal">
+            <div class="deal_btn" onclick="gotoTawlk()">
+              Lets Deal
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="pack2 package premium">
+        <div class="pack_header">
+          <h1>
+            PREMIUM
+          </h1>
+          <h2>Package</h2>
+
+        </div>
+        <div class="price">
+          <div class="price_discription">
+            <span class="pack_price">
+              500</span>
+            <span class="currency">$</span>
+
+          </div>
+        </div>
+        <div class="features">
+          <ul class="feature_list">
+            <li class="check">
+              10 Unique Page's
+            </li>
+            <li class="check">
+              Free logo
+            </li>
+            <li class="check">
+              Image Stock
+            </li>
+            <li class="check">
+              Deployment to Host
+            </li>
+            <li class="check">
+              Full Documentation
+            </li>
+            <li class="check">
+              Fully Responsive
+            </li>
+            <li class="check">
+              Within 4 week
+            </li>
+            <li class="check">
+              CMS(+200$)
+            </li>
+            <li class="check">
+              24/7 guidance
+            </li>
+          </ul>
+          <div class="deal">
+            <div class="deal_btn" onclick="gotoTawlk()">
+              Lets Deal
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="pack3 package pro">
+        <div class="pack_header">
+          <h1>
+            PRO
+          </h1>
+          <h2>Package</h2>
+
+        </div>
+        <div class="price">
+          <div class="price_discription">
+            <span class="pack_price">
+              350</span>
+            <span class="currency">$</span>
+          </div>
+        </div>
+        <div class="features">
+          <ul class="feature_list">
+            <li class="check">
+              5 Uniuqe Page's
+            </li>
+            <li class="check">
+              Free logo
+            </li>
+
+            <li class="check">
+              Deployment to Host
+            </li>
+            <li class="cross">
+              Full Documentation
+            </li>
+            <li class="cross">
+              Image Stock
+            </li>
+            <li class="check">
+              Responsive
+            </li>
+            <li class="check">
+              24/7 guidance
+            </li>
+          </ul>
+          <div class="deal">
+            <div class="deal_btn" onclick="gotoTawlk()">
+              Lets Deal
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="packages wpress">
+
+      <div class="pack1 package basic">
+        <div class="pack_header">
+          <h1>
+            BASIC
+          </h1>
+          <h2>Package</h2>
+
+        </div>
+        <div class="price">
+          <div class="price_discription">
+            <span class="pack_price">
+              100</span>
+            <span class="currency">$</span>
+
+          </div>
+        </div>
+        <div class="features">
+          <ul class="feature_list">
+            <li class="check">
+              2 Unique Page's
+            </li>
+            <li class="cross">
+              Free logo
+            </li>
+            <li class="cross">
+              Image Stock
+            </li>
+            <li class="check">
+              Deployment to Host
+            </li>
+            <li class="cross">
+              Full Documentation
+            </li>
+            <li class="check">
+              Responsive
+            </li>
+            <li class="cross">
+              24/7 guidance
+            </li>
+          </ul>
+          <div class="deal">
+            <div class="deal_btn" onclick="gotoTawlk()">
+              Lets Deal
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="pack2 package premium">
+        <div class="pack_header">
+          <h1>
+            PREMIUM
+          </h1>
+          <h2>Package</h2>
+
+        </div>
+        <div class="price">
+          <div class="price_discription">
+            <span class="pack_price">
+              700</span>
+            <span class="currency">$</span>
+
+          </div>
+        </div>
+        <div class="features">
+          <ul class="feature_list">
+            <li class="check">
+              20 Unique Page's
+            </li>
+            <li class="check">
+              Free logo
+            </li>
+            <li class="check">
+              Image Stock
+            </li>
+            <li class="check">
+              Deployment to Host
+            </li>
+            <li class="check">
+              Full Documentation
+            </li>
+            <li class="check">
+              Fully Responsive
+            </li>
+            <li class="check">
+              Within 4 week
+            </li>
+            <li class="check">
+              CMS(+Guidance)
+            </li>
+            <li class="check">
+              24/7 guidance
+            </li>
+          </ul>
+          <div class="deal">
+            <div class="deal_btn" onclick="gotoTawlk()">
+              Lets Deal
+            </div>
+
+          </div>
+        </div>
+        <div class="pack3 package">
+
+        </div>
+      </div>
+      <div class="pack3 package pro">
+        <div class="pack_header">
+          <h1>
+            PRO
+          </h1>
+          <h2>Package</h2>
+
+        </div>
+        <div class="price">
+          <div class="price_discription">
+            <span class="pack_price">
+              400</span>
+            <span class="currency">$</span>
+          </div>
+        </div>
+        <div class="features">
+          <ul class="feature_list">
+            <li class="check">
+              10 Uniuqe Page's
+            </li>
+            <li class="check">
+              Free logo
+            </li>
+            <li class="check">
+              CMS(+Guidance)
+            </li>
+            <li class="check">
+              Deployment to Host
+            </li>
+            <li class="cross">
+              Full Documentation
+            </li>
+            <li class="cross">
+              Free Image Stock
+            </li>
+            <li class="check">
+              24/7 guidance
+            </li>
+          </ul>
+          <div class="deal">
+            <div class="deal_btn" onclick="gotoTawlk()">
+              Lets Deal
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="packages graphics">
+
+      <div class="pack1 package basic">
+        <div class="pack_header">
+          <h1>
+            BASIC
+          </h1>
+          <h2>Package</h2>
+
+        </div>
+        <div class="price">
+          <div class="price_discription">
+            <span class="pack_price">
+              15</span>
+            <span class="currency">$</span>
+
+          </div>
+        </div>
+        <div class="features">
+          <ul class="feature_list">
+            <li class="check">
+              3 Concepts
+            </li>
+            <li class="cross">
+              All Format
+            </li>
+            <li class="cross">
+              24-30 Hours
+            </li>
+            <li class="cross">
+              Unlimited Revisions
+            </li>
+            <li class="check">
+              100% Satisfaction
+            </li>
+            <li class="cross">
+              OwnerShip Right
+            </li>
+            <li class="check">
+              Free Icon Design
+            </li>
+          </ul>
+          <div class="deal">
+            <div class="deal_btn" onclick="gotoTawlk()">
+              Lets Deal
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="pack2 package premium">
+        <div class="pack_header">
+          <h1>
+            PREMIUM
+          </h1>
+          <h2>Package</h2>
+
+        </div>
+        <div class="price">
+          <div class="price_discription">
+            <span class="pack_price">
+              150</span>
+            <span class="currency">$</span>
+
+          </div>
+        </div>
+        <div class="features">
+          <ul class="feature_list">
+            <li class="check">
+              10 Concepts
+            </li>
+            <li class="check">
+              All Format
+            </li>
+            <li class="check">
+              24 Hours
+            </li>
+            <li class="check">
+              Unlimited Revesions
+            </li>
+            <li class="check">
+              100% Satisfaction
+            </li>
+            <li class="check">
+              OwnerShip Right
+            </li>
+            <li class="check">
+              Discount(+2 logo)
+            </li>
+            <li class="check">
+              Stationery Design
+            </li>
+            <li class="check">
+              Email Signature
+            </li>
+          </ul>
+          <div class="deal">
+            <div class="deal_btn" onclick="gotoTawlk()">
+              Lets Deal
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="pack3 package pro">
+        <div class="pack_header">
+          <h1>
+            PRO
+          </h1>
+          <h2>Package</h2>
+
+        </div>
+        <div class="price">
+          <div class="price_discription">
+            <span class="pack_price">
+              50</span>
+            <span class="currency">$</span>
+
+          </div>
+        </div>
+        <div class="features">
+          <ul class="feature_list">
+            <li class="check">
+              5 Concepts
+            </li>
+            <li class="cross">
+              All Format
+            </li>
+            <li class="check">
+              24 Hours
+            </li>
+            <li class="cross">
+              Unlimited Revisions
+            </li>
+            <li class="check">
+              100% Satisfaction
+            </li>
+            <li class="check">
+              OwnerShip Right
+            </li>
+            <li class="check">
+              Free Icon Design
+            </li>
+          </ul>
+          <div class="deal">
+            <div class="deal_btn" onclick="gotoTawlk()">
+              Lets Deal
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section> -->
+
+
+
+
+  <div class="container_menu" onclick="MenuIcon(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <!-- ***** Contact Us Start ***** -->
+  <section class="section colored" id="contact-us">
+    <div class="container">
+      <!-- ***** Section Title Start ***** -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="center-heading">
+            <h2 class="section-title">Talk To Us</h2>
+          </div>
+        </div>
+        <div class="offset-lg-3 col-lg-6">
+          <div class="center-text">
+            <p>For any queries or projects you can contact us</p>
+          </div>
+        </div>
+      </div>
+      <!-- ***** Section Title End ***** -->
+
+      <div class="row">
+        <!-- ***** Contact Text Start ***** -->
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <h5 class="margin-bottom-30">Keep in touch</h5>
+          <div class="contact-text">
+            <p>CPO 10/8 Majeed SRE Dalmian, near National Stadium road ,Karachi East
+              <br>Pakistan
+            </p>
+            <p>Please enter your correct information. Because we will contact you on the base of given information. <br>
+              Thank you
+            </p>
+          </div>
+        </div>
+        <!-- ***** Contact Text End ***** -->
+
+        <!-- ***** Contact Form Start ***** -->
+        <div class="col-lg-8 col-md-6 col-sm-12">
+          <div class="contact-form">
+            <form id="contact" action="" method="get">
+              <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="fname" placeholder="First Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="lname" placeholder="Last Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                  <fieldset>
+                    <input name="email" type="email" class="form-control" id="email" placeholder="E-Mail Address"
+                      required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your Message"
+                      required=""></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- ***** Contact Form End ***** -->
+      </div>
+    </div>
+  </section>
+  <!-- ***** Contact Us End ***** -->
+  <!-- <div class="container_social">
+    <div class="bar">
+      L<br>I <br>N<br>K
+    </div>
+  </div>
+  <div class="social_icons">
+
+    <div class="s_icon">
+      <a class="social-whatsapp" href="https://wa.me/+923408586646?text=" target="_blank"><i
+          class="fa fa-whatsapp"></i></a>
+    </div>
+    <div class="s_icon">
+      <a class="social-tw" href="mailto:sajjadali9470@gmail.com"><i class="fa fa-envelope"></i></a>
+    </div>
+
+    <div class="s_icon">
+      <a class="social-fb" href="https://www.facebook.com/sajjadali9470"><i class="fab fa-facebook-f"></i></a>
+    </div>
+
+    <div class="s_icon">
+      <a class="social-li" href="https://www.linkedin.com/in/sajjad-ali-6067751a6/"><i
+          class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <div class="s_icon">
+      <a class="social-in" href="https://www.instagram.com/sajjadali070/"><i class="fab fa-instagram"></i></a>
+
+    </div>
+
+  </div> -->
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="parts part1">
+      <a class="social-tw" href="mailto:sajjadali9470@gmail.com"><i class="fa fa-envelope"></i></a>
+      <a class="social-fb" href="https://www.facebook.com/sajjadali9470" target="_blank"><i
+          class="fab fa-facebook-f"></i></a>
+      <a class="social-li" href="https://www.linkedin.com/in/sajjad-ali-6067751a6/" target="_blank"><i
+          class="fab fa-linkedin-in"></i></a>
+      <a class="social-in" href="https://www.instagram.com/sajjadali070/"><i class="fab fa-instagram"></i></a>
+      <a class="social-whatsapp" href="https://wa.me/+923408586646?text=" target="_blank"><i
+          class="fa fa-whatsapp"></i></a>
+    </div>
+    <div class="parts part2">
+      <h3 style="color: white;">&copy; Copyright by
+        ResearchWeb</h3>
+    </div>
+  </footer>
+  <button onclick="scrollTopAnimated()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+  <div class="overlay hidden"></div>
+  <script src="./js/RESEARCHWEB070920689SAJJADALI.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/slider1.js"></script>
+  <script src="./js/package.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+  <script>
+    setInterval(() => {
+      d = new Date();
+      htime = d.getHours();
+
+      mtime = d.getMinutes();
+
+      stime = d.getSeconds();
+      Ctime = htime + ":" + mtime + ":" + stime;
+    });
+    const firebaseConfig = {
+      apiKey: "AIzaSyAI6bkhv7Z1d6RJEAXuSIPYNkTNUQTi60c",
+      authDomain: "researchweb-sajjad070.firebaseapp.com",
+      databaseURL: "https://researchweb-sajjad070-default-rtdb.firebaseio.com",
+      projectId: "researchweb-sajjad070",
+      storageBucket: "researchweb-sajjad070.appspot.com",
+      messagingSenderId: "933654276941",
+      appId: "1:933654276941:web:625b6743813e9b679ba504",
+      measurementId: "G-RWDKDRRZMK"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const rootRef = firebase.database().ref();
+
+    const commentsRef = rootRef.child('messages');
+    // const admin=commentsRef.child('recommete')
+
+    document.getElementById("btnSubmitmessage").addEventListener("click", function () {
+      var checkEmpty1 = 0;
+      var checkEmpty2 = 0;
+      var checkEmpty3 = 0;
+      var checkEmpty4 = 0;
+      var fnameNew = [...document.getElementById('fname').value];
+      var lnameNew = [...document.getElementById('lname').value];
+      var emailNew = [...document.getElementById('email').value];
+      var messageNew = [...document.getElementById('message').value];
+
+      for (let i = 0; i < fnameNew.length; i++) {
+        if (fnameNew[i] == " ") {
+          checkEmpty1++;
+
+        }
+      }
+      for (let i = 0; i < lnameNew.length; i++) {
+        if (lnameNew[i] == " ") {
+          checkEmpty2++;
+
+        }
+      }
+      for (let i = 0; i < emailNew.length; i++) {
+        if (emailNew[i] == " ") {
+          checkEmpty3++;
+
+        }
+      }
+      for (let i = 0; i < messageNew.length; i++) {
+        if (messageNew[i] == " ") {
+          checkEmpty4++;
+
+        }
+      }
+      if (checkEmpty1 === fnameNew.length || checkEmpty2 === lnameNew.length || checkEmpty3 === emailNew.length || checkEmpty4 === messageNew.length) {
+
+      } else {
+
+        var messagenew = document.getElementById('message').value.replace(/\n/g, "<br>");
+
+        var newPostRef = commentsRef.push();
+
+        newPostRef.set({
+          firstname: document.getElementById('fname').value.trim(),
+          lastname: document.getElementById('lname').value.trim(),
+          email: document.getElementById('email').value.trim(),
+          message: messagenew.trim(),
+          time: Ctime,
+          when: firebase.database.ServerValue.TIMESTAMP
+        });
+      }
+
+
+    });
+
+  </script>
+
+
+</body>
+
+</html>
